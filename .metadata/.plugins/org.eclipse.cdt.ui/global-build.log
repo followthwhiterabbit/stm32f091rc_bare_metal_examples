@@ -788,3 +788,272 @@ arm-none-eabi-size   4_gpio_input.elf
     588	      8	   1568	   2164	    874	4_gpio_input.elf
 Finished building: default.size.stdout
  
+15:15:50 **** Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'uart2_tx_init':
+../Src/main.c:74:25: error: 'USART2EN' undeclared (first use in this function); did you mean 'UART2EN'?
+   74 |         RCC->APB1ENR |= USART2EN;
+      |                         ^~~~~~~~
+      |                         UART2EN
+../Src/main.c:74:25: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:77:45: error: 'UART_BaudRate' undeclared (first use in this function); did you mean 'UART_BAUDRATE'?
+   77 |         uart_set_baudrate(USART2, APB1_CLK, UART_BaudRate);
+      |                                             ^~~~~~~~~~~~~
+      |                                             UART_BAUDRATE
+../Src/main.c: In function 'uart_write':
+../Src/main.c:96:17: error: 'USART_TypeDef' has no member named 'DR'; did you mean 'RDR'?
+   96 |         USART2->DR = (ch & 0xFF)
+      |                 ^~
+      |                 RDR
+../Src/main.c:96:33: error: expected ';' before '}' token
+   96 |         USART2->DR = (ch & 0xFF)
+      |                                 ^
+      |                                 ;
+......
+  100 | }
+      | ~                                
+../Src/main.c: In function 'compute_uart_bd':
+../Src/main.c:118:62: error: 'Baudrate' undeclared (first use in this function); did you mean 'BaudRate'?
+  118 |                         return ((PeriphClk + (BaudRate/2U)) /Baudrate);
+      |                                                              ^~~~~~~~
+      |                                                              BaudRate
+../Src/main.c:121:1: warning: control reaches end of non-void function [-Wreturn-type]
+  121 | }
+      | ^
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+15:16:07 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'uart2_tx_init':
+../Src/main.c:74:25: error: 'USART2EN' undeclared (first use in this function); did you mean 'UART2EN'?
+   74 |         RCC->APB1ENR |= USART2EN;
+      |                         ^~~~~~~~
+      |                         UART2EN
+../Src/main.c:74:25: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:77:45: error: 'UART_BaudRate' undeclared (first use in this function); did you mean 'UART_BAUDRATE'?
+   77 |         uart_set_baudrate(USART2, APB1_CLK, UART_BaudRate);
+      |                                             ^~~~~~~~~~~~~
+      |                                             UART_BAUDRATE
+../Src/main.c: In function 'uart_write':
+../Src/main.c:96:17: error: 'USART_TypeDef' has no member named 'DR'; did you mean 'RDR'?
+   96 |         USART2->DR = (ch & 0xFF)
+      |                 ^~
+      |                 RDR
+../Src/main.c:96:33: error: expected ';' before '}' token
+   96 |         USART2->DR = (ch & 0xFF)
+      |                                 ^
+      |                                 ;
+......
+  100 | }
+      | ~                                
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+15:16:30 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'uart2_tx_init':
+../Src/main.c:74:25: error: 'USART2EN' undeclared (first use in this function); did you mean 'UART2EN'?
+   74 |         RCC->APB1ENR |= USART2EN;
+      |                         ^~~~~~~~
+      |                         UART2EN
+../Src/main.c:74:25: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c: In function 'uart_write':
+../Src/main.c:96:17: error: 'USART_TypeDef' has no member named 'DR'; did you mean 'RDR'?
+   96 |         USART2->DR = (ch & 0xFF)
+      |                 ^~
+      |                 RDR
+../Src/main.c:96:33: error: expected ';' before '}' token
+   96 |         USART2->DR = (ch & 0xFF)
+      |                                 ^
+      |                                 ;
+......
+  100 | }
+      | ~                                
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+15:17:58 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'uart2_tx_init':
+../Src/main.c:74:25: error: 'USART2EN' undeclared (first use in this function); did you mean 'UART2EN'?
+   74 |         RCC->APB1ENR |= USART2EN;
+      |                         ^~~~~~~~
+      |                         UART2EN
+../Src/main.c:74:25: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c: In function 'uart_write':
+../Src/main.c:96:34: error: expected ';' before '}' token
+   96 |         USART2->TDR = (ch & 0xFF)
+      |                                  ^
+      |                                  ;
+......
+  100 | }
+      | ~                                 
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+15:18:13 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'uart_write':
+../Src/main.c:96:34: error: expected ';' before '}' token
+   96 |         USART2->TDR = (ch & 0xFF)
+      |                                  ^
+      |                                  ;
+......
+  100 | }
+      | ~                                 
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+15:18:23 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "5_uart_tx.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/5_uart_tx/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="5_uart_tx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+/opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.linux64_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld: ./Src/main.o: in function `main':
+/home/kaan/cubeideworkspace/5_uart_tx/Debug/../Src/main.c:42: undefined reference to `uart2_write'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:63: 5_uart_tx.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+15:18:42 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "5_uart_tx.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/5_uart_tx/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="5_uart_tx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+/opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.linux64_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld: ./Src/main.o: in function `main':
+/home/kaan/cubeideworkspace/5_uart_tx/Debug/../Src/main.c:42: undefined reference to `uart2_write'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:63: 5_uart_tx.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+15:19:00 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:42:9: warning: implicit declaration of function 'uart_write'; did you mean 'uart2_write'? [-Wimplicit-function-declaration]
+   42 |         uart_write('y');
+      |         ^~~~~~~~~~
+      |         uart2_write
+../Src/main.c: At top level:
+../Src/main.c:89:6: warning: conflicting types for 'uart_write'; have 'void(int)'
+   89 | void uart_write(int ch)
+      |      ^~~~~~~~~~
+../Src/main.c:42:9: note: previous implicit declaration of 'uart_write' with type 'void(int)'
+   42 |         uart_write('y');
+      |         ^~~~~~~~~~
+arm-none-eabi-gcc -o "5_uart_tx.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/5_uart_tx/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="5_uart_tx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 5_uart_tx.elf
+ 
+arm-none-eabi-size   5_uart_tx.elf 
+arm-none-eabi-objdump -h -S  5_uart_tx.elf  > "5_uart_tx.list"
+   text	   data	    bss	    dec	    hex	filename
+   1056	      8	   1568	   2632	    a48	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+Finished building: 5_uart_tx.list
+ 
+15:19:09 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-size   5_uart_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1056	      8	   1568	   2632	    a48	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+15:19:20 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-size   5_uart_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1056	      8	   1568	   2632	    a48	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+15:19:28 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-size   5_uart_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1056	      8	   1568	   2632	    a48	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+15:20:04 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:42:9: warning: implicit declaration of function 'uart_write'; did you mean 'uart2_write'? [-Wimplicit-function-declaration]
+   42 |         uart_write('y');
+      |         ^~~~~~~~~~
+      |         uart2_write
+../Src/main.c: At top level:
+../Src/main.c:89:6: warning: conflicting types for 'uart_write'; have 'void(int)'
+   89 | void uart_write(int ch)
+      |      ^~~~~~~~~~
+../Src/main.c:42:9: note: previous implicit declaration of 'uart_write' with type 'void(int)'
+   42 |         uart_write('y');
+      |         ^~~~~~~~~~
+arm-none-eabi-gcc -o "5_uart_tx.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/5_uart_tx/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="5_uart_tx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 5_uart_tx.elf
+ 
+arm-none-eabi-size   5_uart_tx.elf 
+arm-none-eabi-objdump -h -S  5_uart_tx.elf  > "5_uart_tx.list"
+   text	   data	    bss	    dec	    hex	filename
+   1056	      8	   1568	   2632	    a48	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+Finished building: 5_uart_tx.list
+ 
+15:20:08 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-size   5_uart_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1056	      8	   1568	   2632	    a48	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+15:20:48 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:42:9: warning: implicit declaration of function 'uart_write'; did you mean 'uart2_write'? [-Wimplicit-function-declaration]
+   42 |         uart_write('y');
+      |         ^~~~~~~~~~
+      |         uart2_write
+../Src/main.c: At top level:
+../Src/main.c:89:6: warning: conflicting types for 'uart_write'; have 'void(int)'
+   89 | void uart_write(int ch)
+      |      ^~~~~~~~~~
+../Src/main.c:42:9: note: previous implicit declaration of 'uart_write' with type 'void(int)'
+   42 |         uart_write('y');
+      |         ^~~~~~~~~~
+arm-none-eabi-gcc -o "5_uart_tx.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/5_uart_tx/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="5_uart_tx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 5_uart_tx.elf
+ 
+arm-none-eabi-size   5_uart_tx.elf 
+arm-none-eabi-objdump -h -S  5_uart_tx.elf  > "5_uart_tx.list"
+   text	   data	    bss	    dec	    hex	filename
+   1056	      8	   1568	   2632	    a48	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+Finished building: 5_uart_tx.list
+ 
+15:20:51 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-size   5_uart_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1056	      8	   1568	   2632	    a48	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+15:26:50 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-size   5_uart_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1056	      8	   1568	   2632	    a48	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+15:28:56 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-size   5_uart_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1056	      8	   1568	   2632	    a48	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+15:29:12 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-size   5_uart_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1056	      8	   1568	   2632	    a48	5_uart_tx.elf
+Finished building: default.size.stdout
+ 

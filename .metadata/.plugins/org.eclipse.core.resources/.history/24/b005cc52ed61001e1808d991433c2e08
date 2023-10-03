@@ -6,9 +6,6 @@
 #define UART2EN 	   (1U << 17)
 #define CR1_TE 		   (1U << 3)
 #define CR1_UE_ENABLE  (1U << 0)
-#define ISR_TXE 	   (1U << 7)
-
-
 #define SYS_FREQ 	   8000000
 #define APB1_CLK	   SYS_FREQ
 
@@ -19,9 +16,6 @@
 static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
 
 static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
-
-void uart2_tx_init();
-void uart2_write(int ch);
 
 /*
  *                          00    00    00     00     00    00    00   00   00  00
@@ -36,10 +30,9 @@ int main(void)
 
 
 
-
 while(1)
 {
-	uart_write('y');
+
 }
 
 
@@ -71,10 +64,10 @@ void uart2_tx_init(void)
 
 	/* configure uart module */
 	/* enable clock access to uart2 */
-	RCC->APB1ENR |= UART2EN;
+	RCC->APB1ENR |= USART2EN;
 
 	/* configure baud rate */
-	uart_set_baudrate(USART2, APB1_CLK, UART_BAUDRATE);
+	uart_set_baudrate(USART2, APB1_CLK, UART_BaudRate);
 
 	/* configure the transfer direction */
 	USART2->CR1 = CR1_TE;
@@ -83,27 +76,12 @@ void uart2_tx_init(void)
 	USART2->CR1 |= CR1_UE_ENABLE;
 
 
-}
 
-
-void uart_write(int ch)
-{
-	/* make sure transmit data register is empty */
-	while(!(USART2->ISR & ISR_TXE))
-	{
-
-	} // we wait here until transmission is completed
-
-	/* Write to transmit data register */
-
-	USART2->TDR = (ch & 0xFF);
 
 
 
 
 }
-
-
 
 
 
@@ -119,9 +97,19 @@ USARTx->BRR = compute_uart_bd(PeriphClk, BaudRate);
 
 static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate)
 {
-			return ((PeriphClk + (BaudRate/2U)) /BaudRate);
+			return ((PeriphClk + (BaudRate/2U)) /Baudrate);
 
 
 }
+
+
+
+
+
+
+
+
+
+
 
 

@@ -39,7 +39,7 @@ int main(void)
 
 while(1)
 {
-	uart_write('y');
+	uart2_write('y');
 }
 
 
@@ -71,7 +71,7 @@ void uart2_tx_init(void)
 
 	/* configure uart module */
 	/* enable clock access to uart2 */
-	RCC->APB1ENR |= UART2EN;
+	RCC->APB1ENR |= USART2EN;
 
 	/* configure baud rate */
 	uart_set_baudrate(USART2, APB1_CLK, UART_BAUDRATE);
@@ -89,15 +89,11 @@ void uart2_tx_init(void)
 void uart_write(int ch)
 {
 	/* make sure transmit data register is empty */
-	while(!(USART2->ISR & ISR_TXE))
-	{
-
-	} // we wait here until transmission is completed
+	while(!(USART2->ISR & ISR_TXE)){} // we wait here until transmission is completed
 
 	/* Write to transmit data register */
 
-	USART2->TDR = (ch & 0xFF);
-
+	USART2->DR = (ch & 0xFF)
 
 
 

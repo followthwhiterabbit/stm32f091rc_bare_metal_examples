@@ -39,7 +39,7 @@ int main(void)
 
 while(1)
 {
-	uart_write('y');
+	uart2_write('y');
 }
 
 
