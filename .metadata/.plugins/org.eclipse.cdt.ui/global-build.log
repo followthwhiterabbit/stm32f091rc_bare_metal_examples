@@ -1,0 +1,790 @@
+13:33:54 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+13:33:58 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+13:34:34 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+13:34:47 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+13:41:00 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+13:41:58 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+13:44:21 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+13:45:30 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+13:45:55 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+13:45:57 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+13:46:25 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "project_0_led_toggle_address.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/project_0_led_toggle_address/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="project_0_led_toggle_address.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: project_0_led_toggle_address.elf
+ 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+arm-none-eabi-objdump -h -S  project_0_led_toggle_address.elf  > "project_0_led_toggle_address.list"
+   text	   data	    bss	    dec	    hex	filename
+    508	      8	   1568	   2084	    824	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+Finished building: project_0_led_toggle_address.list
+ 
+13:46:27 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    508	      8	   1568	   2084	    824	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+13:47:36 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "project_0_led_toggle_address.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/project_0_led_toggle_address/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="project_0_led_toggle_address.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: project_0_led_toggle_address.elf
+ 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+arm-none-eabi-objdump -h -S  project_0_led_toggle_address.elf  > "project_0_led_toggle_address.list"
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+Finished building: project_0_led_toggle_address.list
+ 
+13:47:38 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+13:50:12 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "project_0_led_toggle_address.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/project_0_led_toggle_address/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="project_0_led_toggle_address.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: project_0_led_toggle_address.elf
+ 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+arm-none-eabi-objdump -h -S  project_0_led_toggle_address.elf  > "project_0_led_toggle_address.list"
+   text	   data	    bss	    dec	    hex	filename
+    512	      8	   1568	   2088	    828	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+Finished building: project_0_led_toggle_address.list
+ 
+13:50:16 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    512	      8	   1568	   2088	    828	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+13:50:32 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "project_0_led_toggle_address.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/project_0_led_toggle_address/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="project_0_led_toggle_address.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: project_0_led_toggle_address.elf
+ 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+arm-none-eabi-objdump -h -S  project_0_led_toggle_address.elf  > "project_0_led_toggle_address.list"
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+Finished building: project_0_led_toggle_address.list
+ 
+13:50:35 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+13:52:10 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "project_0_led_toggle_address.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/project_0_led_toggle_address/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="project_0_led_toggle_address.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: project_0_led_toggle_address.elf
+ 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+arm-none-eabi-objdump -h -S  project_0_led_toggle_address.elf  > "project_0_led_toggle_address.list"
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+Finished building: project_0_led_toggle_address.list
+ 
+13:52:12 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+13:58:52 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "project_0_led_toggle_address.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/project_0_led_toggle_address/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="project_0_led_toggle_address.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: project_0_led_toggle_address.elf
+ 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+arm-none-eabi-objdump -h -S  project_0_led_toggle_address.elf  > "project_0_led_toggle_address.list"
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+Finished building: project_0_led_toggle_address.list
+ 
+13:58:54 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+13:59:05 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+14:02:41 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:83:1: error: expected declaration or statement at end of input
+   83 | }
+      | ^
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+14:02:57 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "project_0_led_toggle_address.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/project_0_led_toggle_address/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="project_0_led_toggle_address.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: project_0_led_toggle_address.elf
+ 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+arm-none-eabi-objdump -h -S  project_0_led_toggle_address.elf  > "project_0_led_toggle_address.list"
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+Finished building: project_0_led_toggle_address.list
+ 
+14:03:00 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+14:07:55 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:46:80: error: expected ')' before numeric constant
+   46 | #define RCC_ADR                                                         0x4002 1000
+      |                                                                                ^~~~
+../Src/main.c:50:51: note: in expansion of macro 'RCC_ADR'
+   50 | #define RCC_AHBENR_enable                        (RCC_ADR +  0x14)
+      |                                                   ^~~~~~~
+../Src/main.c:65:1: note: in expansion of macro 'RCC_AHBENR_enable'
+   65 | RCC_AHBENR_enable |=  (1<<17);
+      | ^~~~~~~~~~~~~~~~~
+../Src/main.c:50:50: note: to match this '('
+   50 | #define RCC_AHBENR_enable                        (RCC_ADR +  0x14)
+      |                                                  ^
+../Src/main.c:65:1: note: in expansion of macro 'RCC_AHBENR_enable'
+   65 | RCC_AHBENR_enable |=  (1<<17);
+      | ^~~~~~~~~~~~~~~~~
+../Src/main.c:65:19: error: lvalue required as left operand of assignment
+   65 | RCC_AHBENR_enable |=  (1<<17);
+      |                   ^~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+14:08:26 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:46:81: error: expected ')' before numeric constant
+   46 | #define RCC_ADR                                                         (0x4002 1000)
+      |                                                                         ~       ^~~~
+../Src/main.c:50:51: note: in expansion of macro 'RCC_ADR'
+   50 | #define RCC_AHBENR_enable                        (RCC_ADR +  0x14)
+      |                                                   ^~~~~~~
+../Src/main.c:65:1: note: in expansion of macro 'RCC_AHBENR_enable'
+   65 | RCC_AHBENR_enable |=  (1<<17);
+      | ^~~~~~~~~~~~~~~~~
+../Src/main.c:65:19: error: lvalue required as left operand of assignment
+   65 | RCC_AHBENR_enable |=  (1<<17);
+      |                   ^~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+14:08:41 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:65:19: error: lvalue required as left operand of assignment
+   65 | RCC_AHBENR_enable |=  (1<<17);
+      |                   ^~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+14:09:58 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:65:20: error: lvalue required as left operand of assignment
+   65 | RCC_AHBENR_enable  |=  (1<<17);
+      |                    ^~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+14:10:12 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:65:20: error: lvalue required as left operand of assignment
+   65 | RCC_AHBENR_enable  |=  (1U<<17);
+      |                    ^~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+14:11:35 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "project_0_led_toggle_address.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/project_0_led_toggle_address/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="project_0_led_toggle_address.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: project_0_led_toggle_address.elf
+ 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+arm-none-eabi-objdump -h -S  project_0_led_toggle_address.elf  > "project_0_led_toggle_address.list"
+   text	   data	    bss	    dec	    hex	filename
+    484	      8	   1568	   2060	    80c	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+Finished building: project_0_led_toggle_address.list
+ 
+14:17:46 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "project_0_led_toggle_address.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/project_0_led_toggle_address/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="project_0_led_toggle_address.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: project_0_led_toggle_address.elf
+ 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+arm-none-eabi-objdump -h -S  project_0_led_toggle_address.elf  > "project_0_led_toggle_address.list"
+   text	   data	    bss	    dec	    hex	filename
+    516	      8	   1568	   2092	    82c	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+Finished building: project_0_led_toggle_address.list
+ 
+14:17:48 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    516	      8	   1568	   2092	    82c	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+14:18:14 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "project_0_led_toggle_address.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/project_0_led_toggle_address/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="project_0_led_toggle_address.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: project_0_led_toggle_address.elf
+ 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+arm-none-eabi-objdump -h -S  project_0_led_toggle_address.elf  > "project_0_led_toggle_address.list"
+   text	   data	    bss	    dec	    hex	filename
+    504	      8	   1568	   2080	    820	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+Finished building: project_0_led_toggle_address.list
+ 
+14:18:16 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    504	      8	   1568	   2080	    820	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+14:18:26 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    504	      8	   1568	   2080	    820	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+14:18:42 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "project_0_led_toggle_address.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/project_0_led_toggle_address/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="project_0_led_toggle_address.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: project_0_led_toggle_address.elf
+ 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+arm-none-eabi-objdump -h -S  project_0_led_toggle_address.elf  > "project_0_led_toggle_address.list"
+   text	   data	    bss	    dec	    hex	filename
+    504	      8	   1568	   2080	    820	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+Finished building: project_0_led_toggle_address.list
+ 
+14:18:45 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    504	      8	   1568	   2080	    820	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+14:19:19 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "project_0_led_toggle_address.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/project_0_led_toggle_address/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="project_0_led_toggle_address.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: project_0_led_toggle_address.elf
+ 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+arm-none-eabi-objdump -h -S  project_0_led_toggle_address.elf  > "project_0_led_toggle_address.list"
+   text	   data	    bss	    dec	    hex	filename
+    516	      8	   1568	   2092	    82c	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+Finished building: project_0_led_toggle_address.list
+ 
+14:19:22 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    516	      8	   1568	   2092	    82c	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+14:19:38 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "project_0_led_toggle_address.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/project_0_led_toggle_address/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="project_0_led_toggle_address.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: project_0_led_toggle_address.elf
+ 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+arm-none-eabi-objdump -h -S  project_0_led_toggle_address.elf  > "project_0_led_toggle_address.list"
+   text	   data	    bss	    dec	    hex	filename
+    516	      8	   1568	   2092	    82c	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+Finished building: project_0_led_toggle_address.list
+ 
+14:19:52 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "project_0_led_toggle_address.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/project_0_led_toggle_address/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="project_0_led_toggle_address.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: project_0_led_toggle_address.elf
+ 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+arm-none-eabi-objdump -h -S  project_0_led_toggle_address.elf  > "project_0_led_toggle_address.list"
+   text	   data	    bss	    dec	    hex	filename
+    504	      8	   1568	   2080	    820	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+Finished building: project_0_led_toggle_address.list
+ 
+14:21:20 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    504	      8	   1568	   2080	    820	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+19:09:31 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:98:17: error: expected identifier or '(' before '=' token
+   98 |         for(int = 0; i < 100000; i++){}
+      |                 ^
+../Src/main.c:98:22: error: 'i' undeclared (first use in this function)
+   98 |         for(int = 0; i < 100000; i++){}
+      |                      ^
+../Src/main.c:98:22: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:09:39 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "project_0_led_toggle_address.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/project_0_led_toggle_address/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="project_0_led_toggle_address.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: project_0_led_toggle_address.elf
+ 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+arm-none-eabi-objdump -h -S  project_0_led_toggle_address.elf  > "project_0_led_toggle_address.list"
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+Finished building: project_0_led_toggle_address.list
+ 
+19:09:43 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+19:09:58 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "project_0_led_toggle_address.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/project_0_led_toggle_address/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="project_0_led_toggle_address.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: project_0_led_toggle_address.elf
+ 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+arm-none-eabi-objdump -h -S  project_0_led_toggle_address.elf  > "project_0_led_toggle_address.list"
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+Finished building: project_0_led_toggle_address.list
+ 
+19:10:01 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+19:10:40 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "project_0_led_toggle_address.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/project_0_led_toggle_address/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="project_0_led_toggle_address.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: project_0_led_toggle_address.elf
+ 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+arm-none-eabi-objdump -h -S  project_0_led_toggle_address.elf  > "project_0_led_toggle_address.list"
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+Finished building: project_0_led_toggle_address.list
+ 
+19:10:44 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+19:11:09 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "project_0_led_toggle_address.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/project_0_led_toggle_address/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="project_0_led_toggle_address.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: project_0_led_toggle_address.elf
+ 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+arm-none-eabi-objdump -h -S  project_0_led_toggle_address.elf  > "project_0_led_toggle_address.list"
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+Finished building: project_0_led_toggle_address.list
+ 
+19:11:12 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+19:11:41 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+19:12:25 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+19:12:41 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+19:13:25 **** Incremental Build of configuration Debug for project project_0_led_toggle_address ****
+make -j16 all 
+arm-none-eabi-size   project_0_led_toggle_address.elf 
+   text	   data	    bss	    dec	    hex	filename
+    528	      8	   1568	   2104	    838	project_0_led_toggle_address.elf
+Finished building: default.size.stdout
+ 
+23:20:29 **** Build of configuration Debug for project 1_led_toggle_addr_struct ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:89:18: error: unknown type name 'uint32_t'
+   89 |         volatile uint32_t MODER; // GPIO port mode register
+      |                  ^~~~~~~~
+../Src/main.c:90:18: error: unknown type name 'uint32_t'
+   90 |         volatile uint32_t DUMMY[4];
+      |                  ^~~~~~~~
+../Src/main.c:91:18: error: unknown type name 'uint32_t'
+   91 |         volatile uint32_t ODR; // GPIO output data register //
+      |                  ^~~~~~~~
+../Src/main.c:98:11: error: unknown type name 'uint32_t'
+   98 |  volatile uint32_t DUMMY[5];
+      |           ^~~~~~~~
+../Src/main.c:99:11: error: unknown type name 'uint32_t'
+   99 |  volatile uint32_t AHBENR; // AHB peripheral clock enable register
+      |           ^~~~~~~~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+23:23:04 **** Incremental Build of configuration Debug for project 1_led_toggle_addr_struct ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "1_led_toggle_addr_struct.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/1_led_toggle_addr_struct/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1_led_toggle_addr_struct.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 1_led_toggle_addr_struct.elf
+ 
+arm-none-eabi-size   1_led_toggle_addr_struct.elf 
+arm-none-eabi-objdump -h -S  1_led_toggle_addr_struct.elf  > "1_led_toggle_addr_struct.list"
+Finished building: 1_led_toggle_addr_struct.list
+   text	   data	    bss	    dec	    hex	filename
+    548	      8	   1568	   2124	    84c	1_led_toggle_addr_struct.elf
+ 
+Finished building: default.size.stdout
+ 
+23:23:35 **** Incremental Build of configuration Debug for project 1_led_toggle_addr_struct ****
+make -j16 all 
+arm-none-eabi-size   1_led_toggle_addr_struct.elf 
+   text	   data	    bss	    dec	    hex	filename
+    548	      8	   1568	   2124	    84c	1_led_toggle_addr_struct.elf
+Finished building: default.size.stdout
+ 
+23:24:18 **** Incremental Build of configuration Debug for project 1_led_toggle_addr_struct ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "1_led_toggle_addr_struct.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/1_led_toggle_addr_struct/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1_led_toggle_addr_struct.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 1_led_toggle_addr_struct.elf
+ 
+arm-none-eabi-size   1_led_toggle_addr_struct.elf 
+arm-none-eabi-objdump -h -S  1_led_toggle_addr_struct.elf  > "1_led_toggle_addr_struct.list"
+   text	   data	    bss	    dec	    hex	filename
+    524	      8	   1568	   2100	    834	1_led_toggle_addr_struct.elf
+Finished building: default.size.stdout
+ 
+Finished building: 1_led_toggle_addr_struct.list
+ 
+23:24:22 **** Incremental Build of configuration Debug for project 1_led_toggle_addr_struct ****
+make -j16 all 
+arm-none-eabi-size   1_led_toggle_addr_struct.elf 
+   text	   data	    bss	    dec	    hex	filename
+    524	      8	   1568	   2100	    834	1_led_toggle_addr_struct.elf
+Finished building: default.size.stdout
+ 
+23:42:13 **** Incremental Build of configuration Debug for project 1_led_toggle_addr_struct ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "1_led_toggle_addr_struct.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/1_led_toggle_addr_struct/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1_led_toggle_addr_struct.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 1_led_toggle_addr_struct.elf
+ 
+arm-none-eabi-size   1_led_toggle_addr_struct.elf 
+arm-none-eabi-objdump -h -S  1_led_toggle_addr_struct.elf  > "1_led_toggle_addr_struct.list"
+   text	   data	    bss	    dec	    hex	filename
+    548	      8	   1568	   2124	    84c	1_led_toggle_addr_struct.elf
+Finished building: default.size.stdout
+ 
+Finished building: 1_led_toggle_addr_struct.list
+ 
+23:42:31 **** Incremental Build of configuration Debug for project 1_led_toggle_addr_struct ****
+make -j16 all 
+arm-none-eabi-size   1_led_toggle_addr_struct.elf 
+   text	   data	    bss	    dec	    hex	filename
+    548	      8	   1568	   2124	    84c	1_led_toggle_addr_struct.elf
+Finished building: default.size.stdout
+ 
+13:16:02 **** Build of configuration Debug for project 2_gpio_output ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m0 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f091rctx.d" -MT"Startup/startup_stm32f091rctx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f091rctx.o" "../Startup/startup_stm32f091rctx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+In file included from ../Src/main.c:1:
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:159:3: error: #error "Please select first the target STM32F0xx device used in your application (in stm32f0xx.h file)"
+  159 |  #error "Please select first the target STM32F0xx device used in your application (in stm32f0xx.h file)"
+      |   ^~~~~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+13:16:28 **** Incremental Build of configuration Debug for project 2_gpio_output ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:1:
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:159:3: error: #error "Please select first the target STM32F0xx device used in your application (in stm32f0xx.h file)"
+  159 |  #error "Please select first the target STM32F0xx device used in your application (in stm32f0xx.h file)"
+      |   ^~~~~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+13:17:49 **** Incremental Build of configuration Debug for project 2_gpio_output ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "2_gpio_output.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/2_gpio_output/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="2_gpio_output.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 2_gpio_output.elf
+ 
+arm-none-eabi-size   2_gpio_output.elf 
+arm-none-eabi-objdump -h -S  2_gpio_output.elf  > "2_gpio_output.list"
+   text	   data	    bss	    dec	    hex	filename
+    452	      8	   1568	   2028	    7ec	2_gpio_output.elf
+Finished building: default.size.stdout
+ 
+Finished building: 2_gpio_output.list
+ 
+13:20:38 **** Incremental Build of configuration Debug for project 2_gpio_output ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:2:
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:159:3: error: #error "Please select first the target STM32F0xx device used in your application (in stm32f0xx.h file)"
+  159 |  #error "Please select first the target STM32F0xx device used in your application (in stm32f0xx.h file)"
+      |   ^~~~~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+13:21:43 **** Incremental Build of configuration Debug for project 2_gpio_output ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "2_gpio_output.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/2_gpio_output/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="2_gpio_output.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 2_gpio_output.elf
+ 
+arm-none-eabi-size   2_gpio_output.elf 
+arm-none-eabi-objdump -h -S  2_gpio_output.elf  > "2_gpio_output.list"
+   text	   data	    bss	    dec	    hex	filename
+    452	      8	   1568	   2028	    7ec	2_gpio_output.elf
+Finished building: default.size.stdout
+ 
+Finished building: 2_gpio_output.list
+ 
+13:33:18 **** Incremental Build of configuration Debug for project 2_gpio_output ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "2_gpio_output.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/2_gpio_output/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="2_gpio_output.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 2_gpio_output.elf
+ 
+arm-none-eabi-size   2_gpio_output.elf 
+arm-none-eabi-objdump -h -S  2_gpio_output.elf  > "2_gpio_output.list"
+   text	   data	    bss	    dec	    hex	filename
+    548	      8	   1568	   2124	    84c	2_gpio_output.elf
+Finished building: default.size.stdout
+ 
+Finished building: 2_gpio_output.list
+ 
+13:33:37 **** Incremental Build of configuration Debug for project 2_gpio_output ****
+make -j16 all 
+arm-none-eabi-size   2_gpio_output.elf 
+   text	   data	    bss	    dec	    hex	filename
+    548	      8	   1568	   2124	    84c	2_gpio_output.elf
+Finished building: default.size.stdout
+ 
+14:00:38 **** Clean-only build of configuration Debug for project 3_gpio_bsrr ****
+make -j16 clean 
+rm -rf ./Startup/startup_stm32f091rctx.d ./Startup/startup_stm32f091rctx.o
+rm -rf ./Src/main.cyclo ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
+rm -rf 2_gpio_output.elf 2_gpio_output.list 2_gpio_output.map default.size.stdout
+ 
+14:00:39 **** Build of configuration Debug for project 3_gpio_bsrr ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m0 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f091rctx.d" -MT"Startup/startup_stm32f091rctx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f091rctx.o" "../Startup/startup_stm32f091rctx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "3_gpio_bsrr.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/3_gpio_bsrr/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="3_gpio_bsrr.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 3_gpio_bsrr.elf
+ 
+arm-none-eabi-size   3_gpio_bsrr.elf 
+arm-none-eabi-objdump -h -S  3_gpio_bsrr.elf  > "3_gpio_bsrr.list"
+   text	   data	    bss	    dec	    hex	filename
+    572	      8	   1568	   2148	    864	3_gpio_bsrr.elf
+Finished building: default.size.stdout
+ 
+Finished building: 3_gpio_bsrr.list
+ 
+14:00:46 **** Incremental Build of configuration Debug for project 3_gpio_bsrr ****
+make -j16 all 
+arm-none-eabi-size   3_gpio_bsrr.elf 
+   text	   data	    bss	    dec	    hex	filename
+    572	      8	   1568	   2148	    864	3_gpio_bsrr.elf
+Finished building: default.size.stdout
+ 
+11:25:40 **** Build of configuration Debug for project 4_gpio_input ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "4_gpio_input.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/4_gpio_input/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="4_gpio_input.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 4_gpio_input.elf
+ 
+arm-none-eabi-size   4_gpio_input.elf 
+arm-none-eabi-objdump -h -S  4_gpio_input.elf  > "4_gpio_input.list"
+Finished building: 4_gpio_input.list
+   text	   data	    bss	    dec	    hex	filename
+    588	      8	   1568	   2164	    874	4_gpio_input.elf
+ 
+Finished building: default.size.stdout
+ 
+11:25:48 **** Incremental Build of configuration Debug for project 4_gpio_input ****
+make -j16 all 
+arm-none-eabi-size   4_gpio_input.elf 
+   text	   data	    bss	    dec	    hex	filename
+    588	      8	   1568	   2164	    874	4_gpio_input.elf
+Finished building: default.size.stdout
+ 
+11:26:05 **** Incremental Build of configuration Debug for project 4_gpio_input ****
+make -j16 all 
+arm-none-eabi-size   4_gpio_input.elf 
+   text	   data	    bss	    dec	    hex	filename
+    588	      8	   1568	   2164	    874	4_gpio_input.elf
+Finished building: default.size.stdout
+ 

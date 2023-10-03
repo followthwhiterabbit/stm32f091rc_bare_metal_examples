@@ -1,0 +1,18 @@
+//#include "stm32f091xc.h"
+#
+
+
+
+
+
+int main(void)
+{
+
+while(1)
+{
+
+
+}
+
+
+}
