@@ -1358,3 +1358,650 @@ Finished building: default.size.stdout
 Finished building: 5_uart_tx.list
  
  
+19:51:51 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:39:1: warning: implicit declaration of function 'uart_write'; did you mean 'uart2_write'? [-Wimplicit-function-declaration]
+   39 | uart_write('s');
+      | ^~~~~~~~~~
+      | uart2_write
+../Src/main.c: At top level:
+../Src/main.c:92:6: warning: conflicting types for 'uart_write'; have 'void(unsigned int)'
+   92 | void uart_write(unsigned int ch)
+      |      ^~~~~~~~~~
+../Src/main.c:39:1: note: previous implicit declaration of 'uart_write' with type 'void(unsigned int)'
+   39 | uart_write('s');
+      | ^~~~~~~~~~
+arm-none-eabi-gcc -o "5_uart_tx.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/5_uart_tx/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="5_uart_tx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 5_uart_tx.elf
+ 
+arm-none-eabi-size   5_uart_tx.elf 
+arm-none-eabi-objdump -h -S  5_uart_tx.elf  > "5_uart_tx.list"
+   text	   data	    bss	    dec	    hex	filename
+   1084	      8	   1568	   2660	    a64	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+Finished building: 5_uart_tx.list
+ 
+19:52:13 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-size   5_uart_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1084	      8	   1568	   2660	    a64	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+19:52:15 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-size   5_uart_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1084	      8	   1568	   2660	    a64	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+19:52:28 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-size   5_uart_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1084	      8	   1568	   2660	    a64	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+19:53:25 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:39:1: warning: implicit declaration of function 'uart_write'; did you mean 'uart2_write'? [-Wimplicit-function-declaration]
+   39 | uart_write('k');
+      | ^~~~~~~~~~
+      | uart2_write
+../Src/main.c: At top level:
+../Src/main.c:91:6: warning: conflicting types for 'uart_write'; have 'void(unsigned int)'
+   91 | void uart_write(unsigned int ch)
+      |      ^~~~~~~~~~
+../Src/main.c:39:1: note: previous implicit declaration of 'uart_write' with type 'void(unsigned int)'
+   39 | uart_write('k');
+      | ^~~~~~~~~~
+arm-none-eabi-gcc -o "5_uart_tx.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/5_uart_tx/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="5_uart_tx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 5_uart_tx.elf
+ 
+arm-none-eabi-size   5_uart_tx.elf 
+arm-none-eabi-objdump -h -S  5_uart_tx.elf  > "5_uart_tx.list"
+   text	   data	    bss	    dec	    hex	filename
+   1080	      8	   1568	   2656	    a60	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+Finished building: 5_uart_tx.list
+ 
+19:53:33 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-size   5_uart_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1080	      8	   1568	   2656	    a60	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+19:53:41 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-size   5_uart_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1080	      8	   1568	   2656	    a60	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+20:00:50 **** Build of configuration Debug for project 6_uart_printf ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "6_uart_printf.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/6_uart_printf/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="6_uart_printf.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 6_uart_printf.elf
+ 
+arm-none-eabi-size   6_uart_printf.elf 
+arm-none-eabi-objdump -h -S  6_uart_printf.elf  > "6_uart_printf.list"
+   text	   data	    bss	    dec	    hex	filename
+   5256	    100	   1900	   7256	   1c58	6_uart_printf.elf
+Finished building: default.size.stdout
+ 
+Finished building: 6_uart_printf.list
+ 
+20:01:01 **** Incremental Build of configuration Debug for project 6_uart_printf ****
+make -j16 all 
+arm-none-eabi-size   6_uart_printf.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5256	    100	   1900	   7256	   1c58	6_uart_printf.elf
+Finished building: default.size.stdout
+ 
+20:14:30 **** Build of configuration Debug for project 7_uart_modular ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/uart.o"
+../Src/main.c: In function 'main':
+../Src/main.c:18:1: warning: implicit declaration of function 'uart_write' [-Wimplicit-function-declaration]
+   18 | uart_write('k');
+      | ^~~~~~~~~~
+arm-none-eabi-gcc -o "7_uart_modular.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/7_uart_modular/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="7_uart_modular.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 7_uart_modular.elf
+ 
+arm-none-eabi-size   7_uart_modular.elf 
+arm-none-eabi-objdump -h -S  7_uart_modular.elf  > "7_uart_modular.list"
+   text	   data	    bss	    dec	    hex	filename
+   5260	    100	   1900	   7260	   1c5c	7_uart_modular.elf
+Finished building: default.size.stdout
+ 
+Finished building: 7_uart_modular.list
+ 
+20:15:07 **** Incremental Build of configuration Debug for project 7_uart_modular ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/uart.o"
+In file included from ../Src/main.c:3:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "7_uart_modular.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/7_uart_modular/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="7_uart_modular.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 7_uart_modular.elf
+ 
+arm-none-eabi-size   7_uart_modular.elf 
+arm-none-eabi-objdump -h -S  7_uart_modular.elf  > "7_uart_modular.list"
+   text	   data	    bss	    dec	    hex	filename
+   5260	    100	   1900	   7260	   1c5c	7_uart_modular.elf
+Finished building: default.size.stdout
+ 
+Finished building: 7_uart_modular.list
+ 
+20:15:17 **** Incremental Build of configuration Debug for project 7_uart_modular ****
+make -j16 all 
+arm-none-eabi-size   7_uart_modular.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5260	    100	   1900	   7260	   1c5c	7_uart_modular.elf
+Finished building: default.size.stdout
+ 
+20:15:44 **** Incremental Build of configuration Debug for project 7_uart_modular ****
+make -j16 all 
+arm-none-eabi-size   7_uart_modular.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5260	    100	   1900	   7260	   1c5c	7_uart_modular.elf
+Finished building: default.size.stdout
+ 
+20:15:55 **** Incremental Build of configuration Debug for project 7_uart_modular ****
+make -j16 all 
+arm-none-eabi-size   7_uart_modular.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5260	    100	   1900	   7260	   1c5c	7_uart_modular.elf
+Finished building: default.size.stdout
+ 
+20:18:08 **** Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/uart.o"
+arm-none-eabi-gcc -o "8_uart_rx.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/8_uart_rx/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="8_uart_rx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 8_uart_rx.elf
+ 
+arm-none-eabi-size   8_uart_rx.elf 
+arm-none-eabi-objdump -h -S  8_uart_rx.elf  > "8_uart_rx.list"
+   text	   data	    bss	    dec	    hex	filename
+   5260	    100	   1900	   7260	   1c5c	8_uart_rx.elf
+Finished building: default.size.stdout
+ 
+Finished building: 8_uart_rx.list
+ 
+21:35:33 **** Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/uart.o"
+../Src/uart.c: In function 'uart_read':
+../Src/uart.c:123:25: error: 'USART_TypeDef' has no member named 'SR'; did you mean 'ISR'?
+  123 |         while(!(USART2->SR & SR_TXE)){}
+      |                         ^~
+      |                         ISR
+../Src/uart.c:123:30: error: 'SR_TXE' undeclared (first use in this function); did you mean 'ISR_TXE'?
+  123 |         while(!(USART2->SR & SR_TXE)){}
+      |                              ^~~~~~
+      |                              ISR_TXE
+../Src/uart.c:123:30: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Src/subdir.mk:28: Src/uart.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../Src/main.c:3:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:35:50 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/uart.o"
+../Src/uart.c: In function 'uart_read':
+../Src/uart.c:123:25: error: 'USART_TypeDef' has no member named 'SR'; did you mean 'ISR'?
+  123 |         while(!(USART2->SR & ISR_TXE)){}
+      |                         ^~
+      |                         ISR
+make: *** [Src/subdir.mk:28: Src/uart.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:36:02 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/uart.o"
+arm-none-eabi-gcc -o "8_uart_rx.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/8_uart_rx/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="8_uart_rx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 8_uart_rx.elf
+ 
+arm-none-eabi-size   8_uart_rx.elf 
+arm-none-eabi-objdump -h -S  8_uart_rx.elf  > "8_uart_rx.list"
+   text	   data	    bss	    dec	    hex	filename
+   5372	    100	   1900	   7372	   1ccc	8_uart_rx.elf
+Finished building: default.size.stdout
+ 
+Finished building: 8_uart_rx.list
+ 
+00:28:44 **** Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/uart.o"
+../Src/main.c: In function 'main':
+../Src/main.c:15:24: error: 'GPIOA_ENABLE' undeclared (first use in this function); did you mean 'GPIOA_BASE'?
+   15 |         RCC->AHBENR |= GPIOA_ENABLE;
+      |                        ^~~~~~~~~~~~
+      |                        GPIOA_BASE
+../Src/main.c:15:24: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:30:12: error: 'key' undeclared (first use in this function)
+   30 |         if(key == 1)
+      |            ^~~
+../Src/main.c:32:9: error: 'else' without a previous 'if'
+   32 |         else
+      |         ^~~~
+In file included from ../Src/main.c:3:
+../Src/main.c: At top level:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:28: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+00:29:50 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:16:24: error: 'GPIOA_ENABLE' undeclared (first use in this function); did you mean 'GPIOA_BASE'?
+   16 |         RCC->AHBENR |= GPIOA_ENABLE;
+      |                        ^~~~~~~~~~~~
+      |                        GPIOA_BASE
+../Src/main.c:16:24: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:33:9: error: 'else' without a previous 'if'
+   33 |         else
+      |         ^~~~
+In file included from ../Src/main.c:3:
+../Src/main.c: At top level:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:28: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+00:30:10 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:16:24: error: 'GPIOA_ENABLE' undeclared (first use in this function); did you mean 'GPIOA_BASE'?
+   16 |         RCC->AHBENR |= GPIOA_ENABLE;
+      |                        ^~~~~~~~~~~~
+      |                        GPIOA_BASE
+../Src/main.c:16:24: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:33:9: error: 'else' without a previous 'if'
+   33 |         else{
+      |         ^~~~
+In file included from ../Src/main.c:3:
+../Src/main.c: At top level:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:28: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+00:30:26 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:16:24: error: 'GPIOA_ENABLE' undeclared (first use in this function); did you mean 'GPIOA_BASE'?
+   16 |         RCC->AHBENR |= GPIOA_ENABLE;
+      |                        ^~~~~~~~~~~~
+      |                        GPIOA_BASE
+../Src/main.c:16:24: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../Src/main.c:3:
+../Src/main.c: At top level:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:28: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+00:31:33 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:3:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "8_uart_rx.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/8_uart_rx/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="8_uart_rx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 8_uart_rx.elf
+ 
+arm-none-eabi-size   8_uart_rx.elf 
+arm-none-eabi-objdump -h -S  8_uart_rx.elf  > "8_uart_rx.list"
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	8_uart_rx.elf
+Finished building: default.size.stdout
+ 
+Finished building: 8_uart_rx.list
+ 
+00:31:47 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:36:9: error: 'else' without a previous 'if'
+   36 |         else
+      |         ^~~~
+In file included from ../Src/main.c:3:
+../Src/main.c: At top level:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:28: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+00:36:57 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:36:9: error: 'else' without a previous 'if'
+   36 |         else
+      |         ^~~~
+../Src/main.c:11:24: error: expected ')' before ';' token
+   11 | #define GPIOA_5 (1U<<5);
+      |                        ^
+../Src/main.c:37:33: note: in expansion of macro 'GPIOA_5'
+   37 |                 GPIOA->ODR &= ~(GPIOA_5);
+      |                                 ^~~~~~~
+../Src/main.c:37:32: note: to match this '('
+   37 |                 GPIOA->ODR &= ~(GPIOA_5);
+      |                                ^
+In file included from ../Src/main.c:3:
+../Src/main.c: At top level:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:28: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+00:38:20 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:3:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "8_uart_rx.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/8_uart_rx/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="8_uart_rx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 8_uart_rx.elf
+ 
+arm-none-eabi-size   8_uart_rx.elf 
+arm-none-eabi-objdump -h -S  8_uart_rx.elf  > "8_uart_rx.list"
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	8_uart_rx.elf
+Finished building: default.size.stdout
+ 
+Finished building: 8_uart_rx.list
+ 
+00:38:32 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-size   8_uart_rx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	8_uart_rx.elf
+Finished building: default.size.stdout
+ 
+00:39:16 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-size   8_uart_rx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	8_uart_rx.elf
+Finished building: default.size.stdout
+ 
+00:39:24 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-size   8_uart_rx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	8_uart_rx.elf
+Finished building: default.size.stdout
+ 
+00:41:38 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-size   8_uart_rx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	8_uart_rx.elf
+Finished building: default.size.stdout
+ 
+00:42:00 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-size   8_uart_rx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	8_uart_rx.elf
+Finished building: default.size.stdout
+ 
+00:44:07 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:3:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "8_uart_rx.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/8_uart_rx/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="8_uart_rx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 8_uart_rx.elf
+ 
+arm-none-eabi-size   8_uart_rx.elf 
+arm-none-eabi-objdump -h -S  8_uart_rx.elf  > "8_uart_rx.list"
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	8_uart_rx.elf
+Finished building: default.size.stdout
+ 
+Finished building: 8_uart_rx.list
+ 
+00:44:19 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-size   8_uart_rx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	8_uart_rx.elf
+Finished building: default.size.stdout
+ 
+00:44:51 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-size   8_uart_rx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	8_uart_rx.elf
+Finished building: default.size.stdout
+ 
+00:44:53 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-size   8_uart_rx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	8_uart_rx.elf
+Finished building: default.size.stdout
+ 
+00:45:35 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-size   8_uart_rx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	8_uart_rx.elf
+Finished building: default.size.stdout
+ 
+00:47:04 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:3:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "8_uart_rx.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/8_uart_rx/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="8_uart_rx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 8_uart_rx.elf
+ 
+arm-none-eabi-size   8_uart_rx.elf 
+arm-none-eabi-objdump -h -S  8_uart_rx.elf  > "8_uart_rx.list"
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	8_uart_rx.elf
+Finished building: default.size.stdout
+ 
+Finished building: 8_uart_rx.list
+ 
+00:47:20 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-size   8_uart_rx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	8_uart_rx.elf
+Finished building: default.size.stdout
+ 
+00:47:47 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-size   8_uart_rx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	8_uart_rx.elf
+Finished building: default.size.stdout
+ 
+00:50:03 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:3:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "8_uart_rx.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/8_uart_rx/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="8_uart_rx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 8_uart_rx.elf
+ 
+arm-none-eabi-size   8_uart_rx.elf 
+arm-none-eabi-objdump -h -S  8_uart_rx.elf  > "8_uart_rx.list"
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	8_uart_rx.elf
+Finished building: default.size.stdout
+ 
+Finished building: 8_uart_rx.list
+ 
+00:53:18 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:3:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "8_uart_rx.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/8_uart_rx/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="8_uart_rx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 8_uart_rx.elf
+ 
+arm-none-eabi-size   8_uart_rx.elf 
+arm-none-eabi-objdump -h -S  8_uart_rx.elf  > "8_uart_rx.list"
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	8_uart_rx.elf
+Finished building: default.size.stdout
+ 
+Finished building: 8_uart_rx.list
+ 
+00:53:20 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-size   8_uart_rx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	8_uart_rx.elf
+Finished building: default.size.stdout
+ 
+00:53:45 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-size   8_uart_rx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	8_uart_rx.elf
+Finished building: default.size.stdout
+ 
+00:54:29 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-size   8_uart_rx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	8_uart_rx.elf
+Finished building: default.size.stdout
+ 
+00:55:19 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:3:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "8_uart_rx.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/8_uart_rx/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="8_uart_rx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 8_uart_rx.elf
+ 
+arm-none-eabi-size   8_uart_rx.elf 
+arm-none-eabi-objdump -h -S  8_uart_rx.elf  > "8_uart_rx.list"
+   text	   data	    bss	    dec	    hex	filename
+   1192	      8	   1568	   2768	    ad0	8_uart_rx.elf
+Finished building: default.size.stdout
+ 
+Finished building: 8_uart_rx.list
+ 
+00:55:22 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-size   8_uart_rx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1192	      8	   1568	   2768	    ad0	8_uart_rx.elf
+Finished building: default.size.stdout
+ 
+00:55:54 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:3:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "8_uart_rx.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/8_uart_rx/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="8_uart_rx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 8_uart_rx.elf
+ 
+arm-none-eabi-size   8_uart_rx.elf 
+arm-none-eabi-objdump -h -S  8_uart_rx.elf  > "8_uart_rx.list"
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	8_uart_rx.elf
+Finished building: default.size.stdout
+ 
+Finished building: 8_uart_rx.list
+ 
+00:55:56 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+make -j16 all 
+arm-none-eabi-size   8_uart_rx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1268	      8	   1568	   2844	    b1c	8_uart_rx.elf
+Finished building: default.size.stdout
+ 

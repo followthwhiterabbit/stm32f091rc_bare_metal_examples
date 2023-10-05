@@ -1,0 +1,20 @@
+/*
+ * uart.h
+ *
+ *  Created on: Oct 5, 2023
+ *      Author: kaan
+ */
+
+#ifndef UART_H_
+#define UART_H_
+#include "stm32f0xx.h"
+#include <stdint.h>
+
+
+void uart2_tx_init();
+
+
+
+
+
+#endif /* UART_H_ */
