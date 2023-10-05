@@ -1057,3 +1057,304 @@ arm-none-eabi-size   5_uart_tx.elf
    1056	      8	   1568	   2632	    a48	5_uart_tx.elf
 Finished building: default.size.stdout
  
+13:03:10 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-size   5_uart_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1056	      8	   1568	   2632	    a48	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+13:03:14 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-size   5_uart_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1056	      8	   1568	   2632	    a48	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+13:12:14 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:42:9: warning: implicit declaration of function 'uart_write'; did you mean 'uart2_write'? [-Wimplicit-function-declaration]
+   42 |         uart_write('y');
+      |         ^~~~~~~~~~
+      |         uart2_write
+../Src/main.c: At top level:
+../Src/main.c:86:6: warning: conflicting types for 'uart_write'; have 'void(int)'
+   86 | void uart_write(int ch)
+      |      ^~~~~~~~~~
+../Src/main.c:42:9: note: previous implicit declaration of 'uart_write' with type 'void(int)'
+   42 |         uart_write('y');
+      |         ^~~~~~~~~~
+arm-none-eabi-gcc -o "5_uart_tx.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/5_uart_tx/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="5_uart_tx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 5_uart_tx.elf
+ 
+arm-none-eabi-size   5_uart_tx.elf 
+arm-none-eabi-objdump -h -S  5_uart_tx.elf  > "5_uart_tx.list"
+   text	   data	    bss	    dec	    hex	filename
+   1056	      8	   1568	   2632	    a48	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+Finished building: 5_uart_tx.list
+ 
+13:15:06 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:42:9: warning: implicit declaration of function 'uart_write'; did you mean 'uart2_write'? [-Wimplicit-function-declaration]
+   42 |         uart_write('y');
+      |         ^~~~~~~~~~
+      |         uart2_write
+../Src/main.c: At top level:
+../Src/main.c:86:6: warning: conflicting types for 'uart_write'; have 'void(unsigned int)'
+   86 | void uart_write(unsigned int ch)
+      |      ^~~~~~~~~~
+../Src/main.c:42:9: note: previous implicit declaration of 'uart_write' with type 'void(unsigned int)'
+   42 |         uart_write('y');
+      |         ^~~~~~~~~~
+arm-none-eabi-gcc -o "5_uart_tx.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/5_uart_tx/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="5_uart_tx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 5_uart_tx.elf
+ 
+arm-none-eabi-size   5_uart_tx.elf 
+arm-none-eabi-objdump -h -S  5_uart_tx.elf  > "5_uart_tx.list"
+   text	   data	    bss	    dec	    hex	filename
+   1056	      8	   1568	   2632	    a48	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+Finished building: 5_uart_tx.list
+ 
+13:15:08 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-size   5_uart_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1056	      8	   1568	   2632	    a48	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+13:15:21 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-size   5_uart_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1056	      8	   1568	   2632	    a48	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+13:15:25 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-size   5_uart_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1056	      8	   1568	   2632	    a48	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+13:16:25 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:44:9: warning: implicit declaration of function 'uart_write'; did you mean 'uart2_write'? [-Wimplicit-function-declaration]
+   44 |         uart_write('y');
+      |         ^~~~~~~~~~
+      |         uart2_write
+../Src/main.c: At top level:
+../Src/main.c:88:6: warning: conflicting types for 'uart_write'; have 'void(unsigned int)'
+   88 | void uart_write(unsigned int ch)
+      |      ^~~~~~~~~~
+../Src/main.c:44:9: note: previous implicit declaration of 'uart_write' with type 'void(unsigned int)'
+   44 |         uart_write('y');
+      |         ^~~~~~~~~~
+arm-none-eabi-gcc -o "5_uart_tx.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/5_uart_tx/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="5_uart_tx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 5_uart_tx.elf
+ 
+arm-none-eabi-size   5_uart_tx.elf 
+arm-none-eabi-objdump -h -S  5_uart_tx.elf  > "5_uart_tx.list"
+   text	   data	    bss	    dec	    hex	filename
+   1056	      8	   1568	   2632	    a48	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+Finished building: 5_uart_tx.list
+ 
+13:16:29 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-size   5_uart_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1056	      8	   1568	   2632	    a48	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+13:17:18 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-size   5_uart_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1056	      8	   1568	   2632	    a48	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+13:17:23 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:39:9: warning: implicit declaration of function 'uart_write'; did you mean 'uart2_write'? [-Wimplicit-function-declaration]
+   39 |         uart_write('y');
+      |         ^~~~~~~~~~
+      |         uart2_write
+../Src/main.c: At top level:
+../Src/main.c:88:6: warning: conflicting types for 'uart_write'; have 'void(unsigned int)'
+   88 | void uart_write(unsigned int ch)
+      |      ^~~~~~~~~~
+../Src/main.c:39:9: note: previous implicit declaration of 'uart_write' with type 'void(unsigned int)'
+   39 |         uart_write('y');
+      |         ^~~~~~~~~~
+arm-none-eabi-gcc -o "5_uart_tx.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/5_uart_tx/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="5_uart_tx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 5_uart_tx.elf
+ 
+arm-none-eabi-size   5_uart_tx.elf 
+arm-none-eabi-objdump -h -S  5_uart_tx.elf  > "5_uart_tx.list"
+   text	   data	    bss	    dec	    hex	filename
+   1064	      8	   1568	   2640	    a50	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+Finished building: 5_uart_tx.list
+ 
+13:17:28 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-size   5_uart_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1064	      8	   1568	   2640	    a50	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+13:28:17 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:42:9: warning: implicit declaration of function 'uart_write'; did you mean 'uart2_write'? [-Wimplicit-function-declaration]
+   42 |         uart_write('y');
+      |         ^~~~~~~~~~
+      |         uart2_write
+../Src/main.c: At top level:
+../Src/main.c:86:6: warning: conflicting types for 'uart_write'; have 'void(unsigned int)'
+   86 | void uart_write(unsigned int ch)
+      |      ^~~~~~~~~~
+../Src/main.c:42:9: note: previous implicit declaration of 'uart_write' with type 'void(unsigned int)'
+   42 |         uart_write('y');
+      |         ^~~~~~~~~~
+arm-none-eabi-gcc -o "5_uart_tx.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/5_uart_tx/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="5_uart_tx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 5_uart_tx.elf
+ 
+arm-none-eabi-size   5_uart_tx.elf 
+arm-none-eabi-objdump -h -S  5_uart_tx.elf  > "5_uart_tx.list"
+   text	   data	    bss	    dec	    hex	filename
+   1056	      8	   1568	   2632	    a48	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+Finished building: 5_uart_tx.list
+ 
+13:40:59 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-size   5_uart_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1056	      8	   1568	   2632	    a48	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+13:41:52 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-size   5_uart_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1056	      8	   1568	   2632	    a48	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+13:42:43 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-size   5_uart_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1056	      8	   1568	   2632	    a48	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+13:42:45 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-size   5_uart_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1056	      8	   1568	   2632	    a48	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+13:43:00 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-size   5_uart_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1056	      8	   1568	   2632	    a48	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+23:52:51 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:42:9: warning: implicit declaration of function 'uart_write'; did you mean 'uart2_write'? [-Wimplicit-function-declaration]
+   42 |         uart_write('y');
+      |         ^~~~~~~~~~
+      |         uart2_write
+../Src/main.c: At top level:
+../Src/main.c:86:6: warning: conflicting types for 'uart_write'; have 'void(unsigned int)'
+   86 | void uart_write(unsigned int ch)
+      |      ^~~~~~~~~~
+../Src/main.c:42:9: note: previous implicit declaration of 'uart_write' with type 'void(unsigned int)'
+   42 |         uart_write('y');
+      |         ^~~~~~~~~~
+arm-none-eabi-gcc -o "5_uart_tx.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/5_uart_tx/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="5_uart_tx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 5_uart_tx.elf
+ 
+arm-none-eabi-size   5_uart_tx.elf 
+arm-none-eabi-objdump -h -S  5_uart_tx.elf  > "5_uart_tx.list"
+   text	   data	    bss	    dec	    hex	filename
+   1060	      8	   1568	   2636	    a4c	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+Finished building: 5_uart_tx.list
+ 
+23:52:54 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-size   5_uart_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1060	      8	   1568	   2636	    a4c	5_uart_tx.elf
+Finished building: default.size.stdout
+ 
+19:16:13 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:42:9: warning: implicit declaration of function 'uart_write'; did you mean 'uart2_write'? [-Wimplicit-function-declaration]
+   42 |         uart_write('y');
+      |         ^~~~~~~~~~
+      |         uart2_write
+../Src/main.c: In function 'uart2_tx_init':
+../Src/main.c:74:58: error: expected expression before ')' token
+   74 |         uart_set_baudrate(USART2, APB1_CLK, UART_BAUDRATE);
+      |                                                          ^
+../Src/main.c: At top level:
+../Src/main.c:86:6: warning: conflicting types for 'uart_write'; have 'void(unsigned int)'
+   86 | void uart_write(unsigned int ch)
+      |      ^~~~~~~~~~
+../Src/main.c:42:9: note: previous implicit declaration of 'uart_write' with type 'void(unsigned int)'
+   42 |         uart_write('y');
+      |         ^~~~~~~~~~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:16:30 **** Incremental Build of configuration Debug for project 5_uart_tx ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:42:9: warning: implicit declaration of function 'uart_write'; did you mean 'uart2_write'? [-Wimplicit-function-declaration]
+   42 |         uart_write('y');
+      |         ^~~~~~~~~~
+      |         uart2_write
+../Src/main.c: At top level:
+../Src/main.c:86:6: warning: conflicting types for 'uart_write'; have 'void(unsigned int)'
+   86 | void uart_write(unsigned int ch)
+      |      ^~~~~~~~~~
+../Src/main.c:42:9: note: previous implicit declaration of 'uart_write' with type 'void(unsigned int)'
+   42 |         uart_write('y');
+      |         ^~~~~~~~~~
+arm-none-eabi-gcc -o "5_uart_tx.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/5_uart_tx/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="5_uart_tx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 5_uart_tx.elf
+ 
+arm-none-eabi-size   5_uart_tx.elf 
+arm-none-eabi-objdump -h -S  5_uart_tx.elf  > "5_uart_tx.list"
+   text	   data	    bss	    dec	    hex	filename
+   1060	      8	   1568	   2636	    a4c	5_uart_tx.elf
+Finished building: default.size.stdout
+Finished building: 5_uart_tx.list
+ 
+ 

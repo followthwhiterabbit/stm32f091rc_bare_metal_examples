@@ -14,7 +14,7 @@
 #define SYS_FREQ 	   8000000
 #define APB1_CLK	   SYS_FREQ
 
-#define UART_BAUDRATE 	38400
+#define UART_BAUDRATE 	115200
 
 
 /* Funtion Prototypes */

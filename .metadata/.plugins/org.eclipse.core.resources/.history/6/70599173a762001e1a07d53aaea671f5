@@ -1,7 +1,5 @@
 //#include "stm32f091xc.h"
 #include "stm32f0xx.h"
-#include <stdint.h>
-#include <stdio.h>
 
 
 #define GPIOA_ENABLE   (1U << 17)
@@ -14,7 +12,7 @@
 #define SYS_FREQ 	   8000000
 #define APB1_CLK	   SYS_FREQ
 
-#define UART_BAUDRATE 	38400
+#define UART_BAUDRATE 	115200
 
 
 /* Funtion Prototypes */
@@ -33,7 +31,9 @@ void uart2_write(unsigned int ch);
 
 int main(void)
 {
+
 	uart2_tx_init();
+
 
 
 
@@ -61,9 +61,9 @@ void uart2_tx_init(void)
 
 	/* Set PA2 alternate function type to UART_TX (AF01) */
 	GPIOA->AFR[0] |= (1<<8);
-	GPIOA->AFR[0] &= ~(1<<9);
-	GPIOA->AFR[0] &= ~(1<<10);
-	GPIOA->AFR[0] &= ~(1<<11);
+	GPIOA->AFR[0] &= (1<<9);
+	GPIOA->AFR[0] &= (1<<10);
+	GPIOA->AFR[0] &= (1<<11);
 
 
 	/* configure uart module */
