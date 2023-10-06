@@ -1540,3 +1540,174 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-06 00:55:12.668
 !MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/release/1.2.2/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+!SESSION 2023-10-06 14:31:06.525 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-10-06 14:31:11.847
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-10-06 14:31:11.849
+!MESSAGE Log4j2 initialized with config file /home/kaan/cubeideworkspace/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-10-06 14:31:17.393
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2023-10-06 14:31:22.820
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2023-10-06 14:31:54.254
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-06 14:32:37.759
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates/release/latest, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-06 14:32:40.001
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/release/1.2.2/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2023-10-06 14:38:39.984
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2023-10-06 14:38:41.388
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2023-10-06 14:44:17.609
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2023-10-06 14:44:38.232
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2023-10-06 14:44:58.454
+!MESSAGE No .vrapperrc or _vrapperrc found.
+!SESSION 2023-10-06 14:46:38.092 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-10-06 14:46:42.475
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-10-06 14:46:42.476
+!MESSAGE Log4j2 initialized with config file /home/kaan/cubeideworkspace/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-10-06 14:46:46.951
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2023-10-06 14:46:50.404
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY org.eclipse.core.jobs 2 2 2023-10-06 14:47:21.097
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.ecf.filetransfer.FileTransferJob
+!SESSION 2023-10-06 14:48:21.289 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-10-06 14:48:26.191
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-10-06 14:48:26.192
+!MESSAGE Log4j2 initialized with config file /home/kaan/cubeideworkspace/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-10-06 14:48:30.719
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2023-10-06 14:48:36.299
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2023-10-06 14:48:56.265
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-06 14:49:32.109
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates/release/latest, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-06 14:49:34.691
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/release/1.2.2/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2023-10-06 15:12:16.889
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-06 15:12:17.239
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 3 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-06 15:12:17.240
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-06 15:12:17.240
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 3 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-06 15:12:17.240
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-06 15:14:07.069
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 5 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-06 15:14:07.070
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-06 15:14:07.070
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 5 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-06 15:14:07.070
+!MESSAGE Existing sessions are:
+!SESSION 2023-10-07 00:23:03.090 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-10-07 00:23:06.385
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-10-07 00:23:06.385
+!MESSAGE Log4j2 initialized with config file /home/kaan/cubeideworkspace/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-10-07 00:23:10.037
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2023-10-07 00:23:13.373
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2023-10-07 00:23:37.186
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-07 00:24:01.187
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates/release/latest, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-10-07 00:24:02.388
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/release/1.2.2/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2023-10-07 00:33:01.696
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2023-10-07 00:33:19.643
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2023-10-07 00:33:43.647
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-07 00:33:44.031
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 6 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-07 00:33:44.031
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-07 00:33:44.031
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 6 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-07 00:33:44.031
+!MESSAGE Existing sessions are:
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2023-10-07 00:40:48.340
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2023-10-07 00:42:54.744
+!MESSAGE No .vrapperrc or _vrapperrc found.

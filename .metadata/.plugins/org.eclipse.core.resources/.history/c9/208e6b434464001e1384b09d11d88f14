@@ -34,6 +34,7 @@ while(1)
 	if(key == '1')
 	{
 		GPIOA->ODR |= GPIOA_5;
+
 	}
 	else
 	{
@@ -41,7 +42,14 @@ while(1)
 	}
 
 
-}
+
 
 }
+
+
+}
+
+
+
+
 

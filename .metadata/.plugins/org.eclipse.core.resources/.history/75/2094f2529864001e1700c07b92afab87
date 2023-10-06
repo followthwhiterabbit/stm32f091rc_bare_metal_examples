@@ -20,7 +20,7 @@ static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
 
 
 void uart_write(unsigned int ch);
-int uart_read(void);
+char uart_read(void);
 
 
 

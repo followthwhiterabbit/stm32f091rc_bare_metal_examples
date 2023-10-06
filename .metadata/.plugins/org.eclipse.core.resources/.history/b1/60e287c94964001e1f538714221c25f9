@@ -16,7 +16,7 @@ char key;
 
 int main(void)
 {
-	RCC->AHBENR |= GPIOA_ENABLE;
+	//RCC->AHBENR |= GPIOA_ENABLE;
 
 	GPIOA->MODER |= (1U << 10);
 	GPIOA->MODER &= ~(1U << 11);

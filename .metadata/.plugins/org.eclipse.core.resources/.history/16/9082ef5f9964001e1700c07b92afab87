@@ -120,11 +120,11 @@ int uart_read(void)
 	 *
 	 */
 
-	while(!(USART2->ISR & ISR_RXNE)){}
+	while(!(USART2->ISR & ISR_TXE)){}
 
 
 	/* reading the data */
-	return USART2->RDR;
+	return USART2->TDR;
 
 }
 
