@@ -1,10 +1,25 @@
-00:42:51 **** Incremental Build of configuration Debug for project 8_uart_rx ****
+00:55:21 **** Incremental Build of configuration Debug for project 8_uart_rx ****
 make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/uart.o"
+In file included from ../Src/main.c:3:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "8_uart_rx.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/8_uart_rx/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="8_uart_rx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 8_uart_rx.elf
+ 
 arm-none-eabi-size   8_uart_rx.elf 
+arm-none-eabi-objdump -h -S  8_uart_rx.elf  > "8_uart_rx.list"
    text	   data	    bss	    dec	    hex	filename
-   1264	      8	   1568	   2840	    b18	8_uart_rx.elf
+   1268	      8	   1568	   2844	    b1c	8_uart_rx.elf
 Finished building: default.size.stdout
  
+Finished building: 8_uart_rx.list
+ 
 
-00:42:51 Build Finished. 0 errors, 0 warnings. (took 219ms)
+00:55:22 Build Finished. 0 errors, 2 warnings. (took 475ms)
 

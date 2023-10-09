@@ -1,0 +1,11 @@
+/*
+ * adc.c
+ *
+ *  Created on: Oct 9, 2023
+ *      Author: kaan
+ */
+
+
+#define ADCENABLE		(1U << 9)
+
+
