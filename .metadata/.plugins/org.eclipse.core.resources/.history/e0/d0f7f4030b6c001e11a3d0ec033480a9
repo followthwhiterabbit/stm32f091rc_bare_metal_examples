@@ -1,0 +1,28 @@
+/*
+ * systick.c
+ *
+ *  Created on: Oct 16, 2023
+ *      Author: kaan
+ */
+
+#include "stm32f0xx.h"
+
+// default clock of stm32f091rc is 8Mhz, 8 000 000 cycles per second,
+// per milisecond 8000 cycles
+
+
+#define SYSTICK_LOAD_VAL		8000
+#define CTRL_ENABLE 			(1U<<0)
+#define CTRL_CLKSRC				(1U<<1)
+
+
+
+
+void systickDelayMs(int n)
+{
+
+
+
+
+
+}

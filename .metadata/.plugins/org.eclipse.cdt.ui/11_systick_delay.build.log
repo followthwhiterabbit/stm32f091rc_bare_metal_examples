@@ -1,0 +1,10 @@
+12:53:03 **** Incremental Build of configuration Debug for project 11_systick_delay ****
+make -j16 all 
+arm-none-eabi-size   11_systick_delay.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5376	    100	   1900	   7376	   1cd0	11_systick_delay.elf
+Finished building: default.size.stdout
+ 
+
+12:53:03 Build Finished. 0 errors, 0 warnings. (took 311ms)
+

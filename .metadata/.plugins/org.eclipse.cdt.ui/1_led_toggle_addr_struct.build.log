@@ -1,10 +1,17 @@
-23:42:31 **** Incremental Build of configuration Debug for project 1_led_toggle_addr_struct ****
+12:28:42 **** Build of configuration Debug for project 1_led_toggle_addr_struct ****
 make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "1_led_toggle_addr_struct.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/1_led_toggle_addr_struct/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1_led_toggle_addr_struct.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 1_led_toggle_addr_struct.elf
+ 
 arm-none-eabi-size   1_led_toggle_addr_struct.elf 
+arm-none-eabi-objdump -h -S  1_led_toggle_addr_struct.elf  > "1_led_toggle_addr_struct.list"
    text	   data	    bss	    dec	    hex	filename
     548	      8	   1568	   2124	    84c	1_led_toggle_addr_struct.elf
 Finished building: default.size.stdout
  
+Finished building: 1_led_toggle_addr_struct.list
+ 
 
-23:42:31 Build Finished. 0 errors, 0 warnings. (took 117ms)
+12:28:42 Build Finished. 0 errors, 0 warnings. (took 170ms)
 
