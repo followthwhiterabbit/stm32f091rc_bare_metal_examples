@@ -36,7 +36,7 @@ void systickDelayMs(int delay)
 	for(int i = 0; i < delay; i++)
 	{
 		/* Wait until the COUNTFLAG is set */
-		while((SysTick->CTRL & CTRL_COUNTFLAG == 0)){}
+		while((SysTick->CTRL & CTRL_COUNTFLAG)!= CTRL_COUNTFLAG){}
 // this for loop is to create a delay with a configured value, we're stuck in while loop until the 8000 cycles which means
 		// 1 millisecond has been passed, with the for loop we delay this function
 

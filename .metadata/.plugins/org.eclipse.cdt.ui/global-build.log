@@ -595,3 +595,73 @@ arm-none-eabi-size   11_systick_delay.elf
    5376	    100	   1900	   7376	   1cd0	11_systick_delay.elf
 Finished building: default.size.stdout
  
+12:57:40 **** Incremental Build of configuration Debug for project 11_systick_delay ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:3:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "11_systick_delay.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/11_systick_delay/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="11_systick_delay.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 11_systick_delay.elf
+ 
+arm-none-eabi-size   11_systick_delay.elf 
+arm-none-eabi-objdump -h -S  11_systick_delay.elf  > "11_systick_delay.list"
+   text	   data	    bss	    dec	    hex	filename
+   5380	    100	   1900	   7380	   1cd4	11_systick_delay.elf
+Finished building: default.size.stdout
+ 
+Finished building: 11_systick_delay.list
+ 
+12:57:44 **** Incremental Build of configuration Debug for project 11_systick_delay ****
+make -j16 all 
+arm-none-eabi-size   11_systick_delay.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5380	    100	   1900	   7380	   1cd4	11_systick_delay.elf
+Finished building: default.size.stdout
+ 
+10:42:47 **** Incremental Build of configuration Debug for project 11_systick_delay ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/systick.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/systick.d" -MT"Src/systick.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/systick.o"
+arm-none-eabi-gcc -o "11_systick_delay.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/11_systick_delay/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="11_systick_delay.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 11_systick_delay.elf
+ 
+arm-none-eabi-size   11_systick_delay.elf 
+arm-none-eabi-objdump -h -S  11_systick_delay.elf  > "11_systick_delay.list"
+   text	   data	    bss	    dec	    hex	filename
+   5396	    100	   1900	   7396	   1ce4	11_systick_delay.elf
+Finished building: default.size.stdout
+ 
+Finished building: 11_systick_delay.list
+ 
+10:43:00 **** Incremental Build of configuration Debug for project 11_systick_delay ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:3:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "11_systick_delay.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/11_systick_delay/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="11_systick_delay.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 11_systick_delay.elf
+ 
+arm-none-eabi-size   11_systick_delay.elf 
+arm-none-eabi-objdump -h -S  11_systick_delay.elf  > "11_systick_delay.list"
+   text	   data	    bss	    dec	    hex	filename
+   5392	    100	   1900	   7392	   1ce0	11_systick_delay.elf
+Finished building: default.size.stdout
+ 
+Finished building: 11_systick_delay.list
+ 
+10:43:03 **** Incremental Build of configuration Debug for project 11_systick_delay ****
+make -j16 all 
+arm-none-eabi-size   11_systick_delay.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5392	    100	   1900	   7392	   1ce0	11_systick_delay.elf
+Finished building: default.size.stdout
+ 
