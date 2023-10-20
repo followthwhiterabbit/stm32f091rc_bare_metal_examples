@@ -34,7 +34,6 @@ void tim2_1hz_init(void)
 	TIM2->CNT = 0;
 
 	/* enable timer */
-	TIM2->CR1 = CR1_EN;
 
 
 

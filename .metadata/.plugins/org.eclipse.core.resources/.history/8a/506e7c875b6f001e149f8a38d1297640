@@ -39,9 +39,6 @@ while(1)
 	/* wait for UIF */
 	while(!(TIM2->SR & SR_UIF)){}
 
-	/* Clear UIF */
-	TIM2->SR &= ~(SR_UIF); // Update Interrupt Flag is cleared after we get out of the while loop
-
 
 	printf("A second passed !!\n\r");
 	GPIOA->ODR ^= LED_PIN;

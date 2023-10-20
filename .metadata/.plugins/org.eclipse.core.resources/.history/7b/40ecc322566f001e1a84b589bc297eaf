@@ -5,7 +5,6 @@
 #include <stdio.h>
 #include "adc.h"
 #include "systick.h"
-#include "tim.h"
 
 
 #define GPIOA_ENABLE  (1U << 17)
@@ -31,20 +30,14 @@ int main(void)
 
 
 	uart2_tx_init();
-	tim2_1hz_init();
 
 
 while(1)
 {
-	/* wait for UIF */
-	while(!(TIM2->SR & SR_UIF)){}
-
-	/* Clear UIF */
-	TIM2->SR &= ~(SR_UIF); // Update Interrupt Flag is cleared after we get out of the while loop
-
 
 	printf("A second passed !!\n\r");
 	GPIOA->ODR ^= LED_PIN;
+	systickDelayMs(1000000);
 
 
 
