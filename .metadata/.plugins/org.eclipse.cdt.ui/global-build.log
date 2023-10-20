@@ -1428,3 +1428,80 @@ arm-none-eabi-size   14_input_capture.elf
     740	      8	   1568	   2316	    90c	14_input_capture.elf
 Finished building: default.size.stdout
  
+22:32:23 **** Incremental Build of configuration Debug for project 14_input_capture ****
+make -j16 all 
+arm-none-eabi-size   14_input_capture.elf 
+   text	   data	    bss	    dec	    hex	filename
+    740	      8	   1568	   2316	    90c	14_input_capture.elf
+Finished building: default.size.stdout
+ 
+22:32:25 **** Incremental Build of configuration Debug for project 14_input_capture ****
+make -j16 all 
+arm-none-eabi-size   14_input_capture.elf 
+   text	   data	    bss	    dec	    hex	filename
+    740	      8	   1568	   2316	    90c	14_input_capture.elf
+Finished building: default.size.stdout
+ 
+22:40:01 **** Build of configuration Debug for project 14_input_capture ****
+make -j16 all 
+arm-none-eabi-size   14_input_capture.elf 
+   text	   data	    bss	    dec	    hex	filename
+    740	      8	   1568	   2316	    90c	14_input_capture.elf
+Finished building: default.size.stdout
+ 
+22:40:08 **** Incremental Build of configuration Debug for project 14_input_capture ****
+make -j16 all 
+arm-none-eabi-size   14_input_capture.elf 
+   text	   data	    bss	    dec	    hex	filename
+    740	      8	   1568	   2316	    90c	14_input_capture.elf
+Finished building: default.size.stdout
+ 
+22:40:12 **** Incremental Build of configuration Debug for project 14_input_capture ****
+make -j16 all 
+arm-none-eabi-size   14_input_capture.elf 
+   text	   data	    bss	    dec	    hex	filename
+    740	      8	   1568	   2316	    90c	14_input_capture.elf
+Finished building: default.size.stdout
+ 
+22:42:58 **** Incremental Build of configuration Debug for project 14_input_capture ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/tim.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/tim.d" -MT"Src/tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/tim.o"
+arm-none-eabi-gcc -o "14_input_capture.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/14_input_capture/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="14_input_capture.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 14_input_capture.elf
+ 
+arm-none-eabi-size   14_input_capture.elf 
+arm-none-eabi-objdump -h -S  14_input_capture.elf  > "14_input_capture.list"
+   text	   data	    bss	    dec	    hex	filename
+    748	      8	   1568	   2324	    914	14_input_capture.elf
+Finished building: default.size.stdout
+ 
+Finished building: 14_input_capture.list
+ 
+22:43:01 **** Incremental Build of configuration Debug for project 14_input_capture ****
+make -j16 all 
+arm-none-eabi-size   14_input_capture.elf 
+   text	   data	    bss	    dec	    hex	filename
+    748	      8	   1568	   2324	    914	14_input_capture.elf
+Finished building: default.size.stdout
+ 
+22:43:16 **** Incremental Build of configuration Debug for project 14_input_capture ****
+make -j16 all 
+arm-none-eabi-size   14_input_capture.elf 
+   text	   data	    bss	    dec	    hex	filename
+    748	      8	   1568	   2324	    914	14_input_capture.elf
+Finished building: default.size.stdout
+ 
+22:43:19 **** Incremental Build of configuration Debug for project 14_input_capture ****
+make -j16 all 
+arm-none-eabi-size   14_input_capture.elf 
+   text	   data	    bss	    dec	    hex	filename
+    748	      8	   1568	   2324	    914	14_input_capture.elf
+Finished building: default.size.stdout
+ 
+22:43:27 **** Incremental Build of configuration Debug for project 14_input_capture ****
+make -j16 all 
+arm-none-eabi-size   14_input_capture.elf 
+   text	   data	    bss	    dec	    hex	filename
+    748	      8	   1568	   2324	    914	14_input_capture.elf
+Finished building: default.size.stdout
+ 

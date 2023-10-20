@@ -123,9 +123,6 @@ void tim3_pa6_input_capture(void)
 	TIM3->CCER = CCER_CC1E;
 
 
-	/* enable tim3 */
-	TIM3->CR1 = CR1_EN;
-
 
 
 }
