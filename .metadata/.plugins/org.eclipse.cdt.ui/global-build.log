@@ -724,3 +724,32 @@ arm-none-eabi-size   12_timers.elf
    5396	    100	   1900	   7396	   1ce4	12_timers.elf
 Finished building: default.size.stdout
  
+19:24:27 **** Build of configuration Debug for project 13_output_compare ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/tim.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/tim.d" -MT"Src/tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/tim.o"
+In file included from ../Src/main.c:3:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "13_output_compare.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/13_output_compare/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_output_compare.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 13_output_compare.elf
+ 
+arm-none-eabi-size   13_output_compare.elf 
+arm-none-eabi-objdump -h -S  13_output_compare.elf  > "13_output_compare.list"
+   text	   data	    bss	    dec	    hex	filename
+    600	      8	   1568	   2176	    880	13_output_compare.elf
+Finished building: default.size.stdout
+ 
+Finished building: 13_output_compare.list
+ 
+19:24:47 **** Incremental Build of configuration Debug for project 13_output_compare ****
+make -j16 all 
+arm-none-eabi-size   13_output_compare.elf 
+   text	   data	    bss	    dec	    hex	filename
+    600	      8	   1568	   2176	    880	13_output_compare.elf
+Finished building: default.size.stdout
+ 
