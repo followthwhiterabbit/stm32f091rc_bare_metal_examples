@@ -753,3 +753,678 @@ arm-none-eabi-size   13_output_compare.elf
     600	      8	   1568	   2176	    880	13_output_compare.elf
 Finished building: default.size.stdout
  
+22:20:43 **** Build of configuration Debug for project 14_input_capture ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/adc.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/adc.d" -MT"Src/adc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/adc.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/systick.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/systick.d" -MT"Src/systick.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/systick.o"
+arm-none-eabi-gcc "../Src/tim.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/tim.d" -MT"Src/tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/tim.o"
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/uart.o"
+../Src/systick.c: In function 'systickDelayMs':
+../Src/systick.c:39:38: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   39 |                 while((SysTick->CTRL & CTRL_COUNTFLAG == 0)){}
+      |                                      ^
+In file included from /home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:153,
+                 from ../Src/tim.c:8:
+../Src/tim.c: In function 'tim2_1hz_init':
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:36:9: note: in expansion of macro 'TIM2'
+   36 |         TIM2->PSC = 800 - 1;  // ---------------> 800 0000 / 800 = 10 000
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:40:9: note: in expansion of macro 'TIM2'
+   40 |         TIM2->ARR = 10000 - 1;  // 10 000 / 10 000 = 1Mhz
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:42:9: note: in expansion of macro 'TIM2'
+   42 |         TIM2->CNT = 0;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:45:9: note: in expansion of macro 'TIM2'
+   45 |         TIM2->CR1 = CR1_EN;
+      |         ^~~~
+../Src/tim.c: In function 'tim2_pa5_output_compare':
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:70:9: note: in expansion of macro 'TIM2'
+   70 |         TIM2->PSC = 800 - 1;  // ---------------> 800 0000 / 800 = 10 000
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:74:9: note: in expansion of macro 'TIM2'
+   74 |         TIM2->ARR = 10000 - 1;  // 10 000 / 10 000 = 1Mhz
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:77:9: note: in expansion of macro 'TIM2'
+   77 |         TIM2->CCMR1 = OC_TOGGLE;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:82:9: note: in expansion of macro 'TIM2'
+   82 |         TIM2->CCER = CCER_CC1E;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:86:9: note: in expansion of macro 'TIM2'
+   86 |         TIM2->CNT = 0;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:89:9: note: in expansion of macro 'TIM2'
+   89 |         TIM2->CR1 = CR1_EN;
+      |         ^~~~
+../Src/tim.c: In function 'tim3_pa6_input_capture':
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:692:33: error: expected expression before ')' token
+  692 | #define TIM3                (( *) TIM3_BASE)
+      |                                 ^
+../Src/tim.c:116:9: note: in expansion of macro 'TIM3'
+  116 |         TIM3->PSC = 800 - 1;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:692:33: error: expected expression before ')' token
+  692 | #define TIM3                (( *) TIM3_BASE)
+      |                                 ^
+../Src/tim.c:119:9: note: in expansion of macro 'TIM3'
+  119 |         TIM3->CCMR1 = CCMR_CCIS;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:692:33: error: expected expression before ')' token
+  692 | #define TIM3                (( *) TIM3_BASE)
+      |                                 ^
+../Src/tim.c:123:9: note: in expansion of macro 'TIM3'
+  123 |         TIM3->CCER = CCER_CC1E;
+      |         ^~~~
+make: *** [Src/subdir.mk:37: Src/tim.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Src/main.c: In function 'main':
+../Src/main.c:21:1: warning: implicit declaration of function 'tim3_pa6_input_capture' [-Wimplicit-function-declaration]
+   21 | tim3_pa6_input_capture();
+      | ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:153,
+                 from ../Src/main.c:2:
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:692:33: error: expected expression before ')' token
+  692 | #define TIM3                (( *) TIM3_BASE)
+      |                                 ^
+../Src/main.c:28:17: note: in expansion of macro 'TIM3'
+   28 |         while(!(TIM3->SR & SR_CC1IF)){} // 0000 0000 0000 0000 0000 0000 0000 00x0 // if it's set, we get out of the loop
+      |                 ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:692:33: error: expected expression before ')' token
+  692 | #define TIM3                (( *) TIM3_BASE)
+      |                                 ^
+../Src/main.c:34:21: note: in expansion of macro 'TIM3'
+   34 |         timestamp = TIM3->CCR1;
+      |                     ^~~~
+In file included from ../Src/main.c:3:
+../Src/main.c: At top level:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:37: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+22:21:37 **** Incremental Build of configuration Debug for project 14_input_capture ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/tim.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/tim.d" -MT"Src/tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/tim.o"
+In file included from /home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:153,
+                 from ../Src/tim.c:8:
+../Src/tim.c: In function 'tim2_1hz_init':
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:36:9: note: in expansion of macro 'TIM2'
+   36 |         TIM2->PSC = 800 - 1;  // ---------------> 800 0000 / 800 = 10 000
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:40:9: note: in expansion of macro 'TIM2'
+   40 |         TIM2->ARR = 10000 - 1;  // 10 000 / 10 000 = 1Mhz
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:42:9: note: in expansion of macro 'TIM2'
+   42 |         TIM2->CNT = 0;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:45:9: note: in expansion of macro 'TIM2'
+   45 |         TIM2->CR1 = CR1_EN;
+      |         ^~~~
+../Src/tim.c: In function 'tim2_pa5_output_compare':
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:70:9: note: in expansion of macro 'TIM2'
+   70 |         TIM2->PSC = 800 - 1;  // ---------------> 800 0000 / 800 = 10 000
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:74:9: note: in expansion of macro 'TIM2'
+   74 |         TIM2->ARR = 10000 - 1;  // 10 000 / 10 000 = 1Mhz
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:77:9: note: in expansion of macro 'TIM2'
+   77 |         TIM2->CCMR1 = OC_TOGGLE;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:82:9: note: in expansion of macro 'TIM2'
+   82 |         TIM2->CCER = CCER_CC1E;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:86:9: note: in expansion of macro 'TIM2'
+   86 |         TIM2->CNT = 0;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:89:9: note: in expansion of macro 'TIM2'
+   89 |         TIM2->CR1 = CR1_EN;
+      |         ^~~~
+../Src/tim.c: In function 'tim3_pa6_input_capture':
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:692:33: error: expected expression before ')' token
+  692 | #define TIM3                (( *) TIM3_BASE)
+      |                                 ^
+../Src/tim.c:116:9: note: in expansion of macro 'TIM3'
+  116 |         TIM3->PSC = 800 - 1;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:692:33: error: expected expression before ')' token
+  692 | #define TIM3                (( *) TIM3_BASE)
+      |                                 ^
+../Src/tim.c:119:9: note: in expansion of macro 'TIM3'
+  119 |         TIM3->CCMR1 = CCMR_CCIS;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:692:33: error: expected expression before ')' token
+  692 | #define TIM3                (( *) TIM3_BASE)
+      |                                 ^
+../Src/tim.c:123:9: note: in expansion of macro 'TIM3'
+  123 |         TIM3->CCER = CCER_CC1E;
+      |         ^~~~
+make: *** [Src/subdir.mk:37: Src/tim.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Src/main.c: In function 'main':
+../Src/main.c:21:1: warning: implicit declaration of function 'tim3_pa6_input_capture' [-Wimplicit-function-declaration]
+   21 | tim3_pa6_input_capture();
+      | ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:153,
+                 from ../Src/main.c:2:
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:692:33: error: expected expression before ')' token
+  692 | #define TIM3                (( *) TIM3_BASE)
+      |                                 ^
+../Src/main.c:28:17: note: in expansion of macro 'TIM3'
+   28 |         while(!(TIM3->SR & SR_CC1IF)){} // 0000 0000 0000 0000 0000 0000 0000 00x0 // if it's set, we get out of the loop
+      |                 ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:692:33: error: expected expression before ')' token
+  692 | #define TIM3                (( *) TIM3_BASE)
+      |                                 ^
+../Src/main.c:34:21: note: in expansion of macro 'TIM3'
+   34 |         timestamp = TIM3->CCR1;
+      |                     ^~~~
+In file included from ../Src/main.c:3:
+../Src/main.c: At top level:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:37: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+22:22:45 **** Incremental Build of configuration Debug for project 14_input_capture ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/tim.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/tim.d" -MT"Src/tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/tim.o"
+In file included from /home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:153,
+                 from ../Src/tim.c:8:
+../Src/tim.c: In function 'tim2_1hz_init':
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:36:9: note: in expansion of macro 'TIM2'
+   36 |         TIM2->PSC = 800 - 1;  // ---------------> 800 0000 / 800 = 10 000
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:40:9: note: in expansion of macro 'TIM2'
+   40 |         TIM2->ARR = 10000 - 1;  // 10 000 / 10 000 = 1Mhz
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:42:9: note: in expansion of macro 'TIM2'
+   42 |         TIM2->CNT = 0;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:45:9: note: in expansion of macro 'TIM2'
+   45 |         TIM2->CR1 = CR1_EN;
+      |         ^~~~
+../Src/tim.c: In function 'tim2_pa5_output_compare':
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:70:9: note: in expansion of macro 'TIM2'
+   70 |         TIM2->PSC = 800 - 1;  // ---------------> 800 0000 / 800 = 10 000
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:74:9: note: in expansion of macro 'TIM2'
+   74 |         TIM2->ARR = 10000 - 1;  // 10 000 / 10 000 = 1Mhz
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:77:9: note: in expansion of macro 'TIM2'
+   77 |         TIM2->CCMR1 = OC_TOGGLE;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:82:9: note: in expansion of macro 'TIM2'
+   82 |         TIM2->CCER = CCER_CC1E;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:86:9: note: in expansion of macro 'TIM2'
+   86 |         TIM2->CNT = 0;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:89:9: note: in expansion of macro 'TIM2'
+   89 |         TIM2->CR1 = CR1_EN;
+      |         ^~~~
+../Src/tim.c: In function 'tim3_pa6_input_capture':
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:692:33: error: expected expression before ')' token
+  692 | #define TIM3                (( *) TIM3_BASE)
+      |                                 ^
+../Src/tim.c:116:9: note: in expansion of macro 'TIM3'
+  116 |         TIM3->PSC = 800 - 1;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:692:33: error: expected expression before ')' token
+  692 | #define TIM3                (( *) TIM3_BASE)
+      |                                 ^
+../Src/tim.c:119:9: note: in expansion of macro 'TIM3'
+  119 |         TIM3->CCMR1 = CCMR_CCIS;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:692:33: error: expected expression before ')' token
+  692 | #define TIM3                (( *) TIM3_BASE)
+      |                                 ^
+../Src/tim.c:123:9: note: in expansion of macro 'TIM3'
+  123 |         TIM3->CCER = CCER_CC1E;
+      |         ^~~~
+In file included from /home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:153,
+                 from ../Src/main.c:2:
+../Src/main.c: In function 'main':
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:692:33: error: expected expression before ')' token
+  692 | #define TIM3                (( *) TIM3_BASE)
+      |                                 ^
+../Src/main.c:28:17: note: in expansion of macro 'TIM3'
+   28 |         while(!(TIM3->SR & SR_CC1IF)){} // 0000 0000 0000 0000 0000 0000 0000 00x0 // if it's set, we get out of the loop
+      |                 ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:692:33: error: expected expression before ')' token
+  692 | #define TIM3                (( *) TIM3_BASE)
+      |                                 ^
+../Src/main.c:34:21: note: in expansion of macro 'TIM3'
+   34 |         timestamp = TIM3->CCR1;
+      |                     ^~~~
+In file included from ../Src/main.c:3:
+../Src/main.c: At top level:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:37: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Src/subdir.mk:37: Src/tim.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+22:23:33 **** Incremental Build of configuration Debug for project 14_input_capture ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/tim.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/tim.d" -MT"Src/tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/tim.o"
+In file included from /home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:153,
+                 from ../Src/tim.c:8:
+../Src/tim.c: In function 'tim2_1hz_init':
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:36:9: note: in expansion of macro 'TIM2'
+   36 |         TIM2->PSC = 800 - 1;  // ---------------> 800 0000 / 800 = 10 000
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:40:9: note: in expansion of macro 'TIM2'
+   40 |         TIM2->ARR = 10000 - 1;  // 10 000 / 10 000 = 1Mhz
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:42:9: note: in expansion of macro 'TIM2'
+   42 |         TIM2->CNT = 0;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:45:9: note: in expansion of macro 'TIM2'
+   45 |         TIM2->CR1 = CR1_EN;
+      |         ^~~~
+../Src/tim.c: In function 'tim2_pa5_output_compare':
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:70:9: note: in expansion of macro 'TIM2'
+   70 |         TIM2->PSC = 800 - 1;  // ---------------> 800 0000 / 800 = 10 000
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:74:9: note: in expansion of macro 'TIM2'
+   74 |         TIM2->ARR = 10000 - 1;  // 10 000 / 10 000 = 1Mhz
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:77:9: note: in expansion of macro 'TIM2'
+   77 |         TIM2->CCMR1 = OC_TOGGLE;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:82:9: note: in expansion of macro 'TIM2'
+   82 |         TIM2->CCER = CCER_CC1E;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:86:9: note: in expansion of macro 'TIM2'
+   86 |         TIM2->CNT = 0;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:89:9: note: in expansion of macro 'TIM2'
+   89 |         TIM2->CR1 = CR1_EN;
+      |         ^~~~
+../Src/tim.c: In function 'tim3_pa6_input_capture':
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:692:33: error: expected expression before ')' token
+  692 | #define TIM3                (( *) TIM3_BASE)
+      |                                 ^
+../Src/tim.c:116:9: note: in expansion of macro 'TIM3'
+  116 |         TIM3->PSC = 800 - 1;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:692:33: error: expected expression before ')' token
+  692 | #define TIM3                (( *) TIM3_BASE)
+      |                                 ^
+../Src/tim.c:119:9: note: in expansion of macro 'TIM3'
+  119 |         TIM3->CCMR1 = CCMR_CCIS;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:692:33: error: expected expression before ')' token
+  692 | #define TIM3                (( *) TIM3_BASE)
+      |                                 ^
+../Src/tim.c:123:9: note: in expansion of macro 'TIM3'
+  123 |         TIM3->CCER = CCER_CC1E;
+      |         ^~~~
+In file included from /home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:153,
+                 from ../Src/main.c:2:
+../Src/main.c: In function 'main':
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:692:33: error: expected expression before ')' token
+  692 | #define TIM3                (( *) TIM3_BASE)
+      |                                 ^
+../Src/main.c:28:17: note: in expansion of macro 'TIM3'
+   28 |         while(!(TIM3->SR & SR_CC1IF)){} // 0000 0000 0000 0000 0000 0000 0000 00x0 // if it's set, we get out of the loop
+      |                 ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:692:33: error: expected expression before ')' token
+  692 | #define TIM3                (( *) TIM3_BASE)
+      |                                 ^
+../Src/main.c:34:21: note: in expansion of macro 'TIM3'
+   34 |         timestamp = TIM3->CCR1;
+      |                     ^~~~
+In file included from ../Src/main.c:3:
+../Src/main.c: At top level:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:37: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Src/subdir.mk:37: Src/tim.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+22:25:19 **** Incremental Build of configuration Debug for project 14_input_capture ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/tim.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/tim.d" -MT"Src/tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/tim.o"
+In file included from /home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:153,
+                 from ../Src/tim.c:8:
+../Src/tim.c: In function 'tim2_1hz_init':
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:36:9: note: in expansion of macro 'TIM2'
+   36 |         TIM2->PSC = 800 - 1;  // ---------------> 800 0000 / 800 = 10 000
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:40:9: note: in expansion of macro 'TIM2'
+   40 |         TIM2->ARR = 10000 - 1;  // 10 000 / 10 000 = 1Mhz
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:42:9: note: in expansion of macro 'TIM2'
+   42 |         TIM2->CNT = 0;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:45:9: note: in expansion of macro 'TIM2'
+   45 |         TIM2->CR1 = CR1_EN;
+      |         ^~~~
+../Src/tim.c: In function 'tim2_pa5_output_compare':
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:70:9: note: in expansion of macro 'TIM2'
+   70 |         TIM2->PSC = 800 - 1;  // ---------------> 800 0000 / 800 = 10 000
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:74:9: note: in expansion of macro 'TIM2'
+   74 |         TIM2->ARR = 10000 - 1;  // 10 000 / 10 000 = 1Mhz
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:77:9: note: in expansion of macro 'TIM2'
+   77 |         TIM2->CCMR1 = OC_TOGGLE;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:82:9: note: in expansion of macro 'TIM2'
+   82 |         TIM2->CCER = CCER_CC1E;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:86:9: note: in expansion of macro 'TIM2'
+   86 |         TIM2->CNT = 0;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:691:33: error: expected expression before ')' token
+  691 | #define TIM2                (( *) TIM2_BASE)
+      |                                 ^
+../Src/tim.c:89:9: note: in expansion of macro 'TIM2'
+   89 |         TIM2->CR1 = CR1_EN;
+      |         ^~~~
+../Src/tim.c: In function 'tim3_pa6_input_capture':
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:692:33: error: expected expression before ')' token
+  692 | #define TIM3                (( *) TIM3_BASE)
+      |                                 ^
+../Src/tim.c:116:9: note: in expansion of macro 'TIM3'
+  116 |         TIM3->PSC = 800 - 1;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:692:33: error: expected expression before ')' token
+  692 | #define TIM3                (( *) TIM3_BASE)
+      |                                 ^
+../Src/tim.c:119:9: note: in expansion of macro 'TIM3'
+  119 |         TIM3->CCMR1 = CCMR_CCIS;
+      |         ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:692:33: error: expected expression before ')' token
+  692 | #define TIM3                (( *) TIM3_BASE)
+      |                                 ^
+../Src/tim.c:123:9: note: in expansion of macro 'TIM3'
+  123 |         TIM3->CCER = CCER_CC1E;
+      |         ^~~~
+In file included from /home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:153,
+                 from ../Src/main.c:2:
+../Src/main.c: In function 'main':
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:692:33: error: expected expression before ')' token
+  692 | #define TIM3                (( *) TIM3_BASE)
+      |                                 ^
+../Src/main.c:28:18: note: in expansion of macro 'TIM3'
+   28 |         while(! (TIM3->SR & SR_CC1IF) ){} // 0000 0000 0000 0000 0000 0000 0000 00x0 // if it's set, we get out of the loop
+      |                  ^~~~
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:692:33: error: expected expression before ')' token
+  692 | #define TIM3                (( *) TIM3_BASE)
+      |                                 ^
+../Src/main.c:34:21: note: in expansion of macro 'TIM3'
+   34 |         timestamp = TIM3->CCR1;
+      |                     ^~~~
+In file included from ../Src/main.c:3:
+../Src/main.c: At top level:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:37: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Src/subdir.mk:37: Src/tim.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+22:26:55 **** Incremental Build of configuration Debug for project 14_input_capture ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/adc.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/adc.d" -MT"Src/adc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/adc.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/systick.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/systick.d" -MT"Src/systick.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/systick.o"
+arm-none-eabi-gcc "../Src/tim.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/tim.d" -MT"Src/tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/tim.o"
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/uart.o"
+../Src/systick.c: In function 'systickDelayMs':
+../Src/systick.c:39:38: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   39 |                 while((SysTick->CTRL & CTRL_COUNTFLAG == 0)){}
+      |                                      ^
+In file included from ../Src/main.c:3:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "14_input_capture.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/14_input_capture/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="14_input_capture.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 14_input_capture.elf
+ 
+arm-none-eabi-size   14_input_capture.elf 
+arm-none-eabi-objdump -h -S  14_input_capture.elf  > "14_input_capture.list"
+   text	   data	    bss	    dec	    hex	filename
+    740	      8	   1568	   2316	    90c	14_input_capture.elf
+Finished building: default.size.stdout
+ 
+Finished building: 14_input_capture.list
+ 
+22:27:14 **** Incremental Build of configuration Debug for project 14_input_capture ****
+make -j16 all 
+arm-none-eabi-size   14_input_capture.elf 
+   text	   data	    bss	    dec	    hex	filename
+    740	      8	   1568	   2316	    90c	14_input_capture.elf
+Finished building: default.size.stdout
+ 
+22:27:21 **** Incremental Build of configuration Debug for project 14_input_capture ****
+make -j16 all 
+arm-none-eabi-size   14_input_capture.elf 
+   text	   data	    bss	    dec	    hex	filename
+    740	      8	   1568	   2316	    90c	14_input_capture.elf
+Finished building: default.size.stdout
+ 
+22:27:40 **** Incremental Build of configuration Debug for project 14_input_capture ****
+make -j16 all 
+arm-none-eabi-size   14_input_capture.elf 
+   text	   data	    bss	    dec	    hex	filename
+    740	      8	   1568	   2316	    90c	14_input_capture.elf
+Finished building: default.size.stdout
+ 
+22:27:45 **** Incremental Build of configuration Debug for project 14_input_capture ****
+make -j16 all 
+arm-none-eabi-size   14_input_capture.elf 
+   text	   data	    bss	    dec	    hex	filename
+    740	      8	   1568	   2316	    90c	14_input_capture.elf
+Finished building: default.size.stdout
+ 
+22:28:51 **** Incremental Build of configuration Debug for project 14_input_capture ****
+make -j16 all 
+arm-none-eabi-size   14_input_capture.elf 
+   text	   data	    bss	    dec	    hex	filename
+    740	      8	   1568	   2316	    90c	14_input_capture.elf
+Finished building: default.size.stdout
+ 
+22:28:58 **** Incremental Build of configuration Debug for project 14_input_capture ****
+make -j16 all 
+arm-none-eabi-size   14_input_capture.elf 
+   text	   data	    bss	    dec	    hex	filename
+    740	      8	   1568	   2316	    90c	14_input_capture.elf
+Finished building: default.size.stdout
+ 
+22:29:02 **** Incremental Build of configuration Debug for project 14_input_capture ****
+make -j16 all 
+arm-none-eabi-size   14_input_capture.elf 
+   text	   data	    bss	    dec	    hex	filename
+    740	      8	   1568	   2316	    90c	14_input_capture.elf
+Finished building: default.size.stdout
+ 
+22:29:29 **** Incremental Build of configuration Debug for project 14_input_capture ****
+make -j16 all 
+arm-none-eabi-size   14_input_capture.elf 
+   text	   data	    bss	    dec	    hex	filename
+    740	      8	   1568	   2316	    90c	14_input_capture.elf
+Finished building: default.size.stdout
+ 
+22:29:36 **** Incremental Build of configuration Debug for project 14_input_capture ****
+make -j16 all 
+arm-none-eabi-size   14_input_capture.elf 
+   text	   data	    bss	    dec	    hex	filename
+    740	      8	   1568	   2316	    90c	14_input_capture.elf
+Finished building: default.size.stdout
+ 
