@@ -1505,3 +1505,87 @@ arm-none-eabi-size   14_input_capture.elf
     748	      8	   1568	   2324	    914	14_input_capture.elf
 Finished building: default.size.stdout
  
+00:50:10 **** Build of configuration Debug for project 14_input_interrupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/adc.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/adc.d" -MT"Src/adc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/adc.o"
+arm-none-eabi-gcc "../Src/exti.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/exti.d" -MT"Src/exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/exti.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/systick.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/systick.d" -MT"Src/systick.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/systick.o"
+arm-none-eabi-gcc "../Src/tim.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/tim.d" -MT"Src/tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/tim.o"
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/uart.o"
+../Src/systick.c: In function 'systickDelayMs':
+../Src/systick.c:39:38: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   39 |                 while((SysTick->CTRL & CTRL_COUNTFLAG == 0)){}
+      |                                      ^
+In file included from ../Src/main.c:3:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+../Src/main.c:42:13: warning: 'exti_callback' defined but not used [-Wunused-function]
+   42 | static void exti_callback(void)
+      |             ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "14_input_interrupt.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/14_input_interrupt/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="14_input_interrupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 14_input_interrupt.elf
+ 
+arm-none-eabi-size   14_input_interrupt.elf 
+arm-none-eabi-objdump -h -S  14_input_interrupt.elf  > "14_input_interrupt.list"
+Finished building: 14_input_interrupt.list
+   text	   data	    bss	    dec	    hex	filename
+   1300	      8	   1568	   2876	    b3c	14_input_interrupt.elf
+ 
+Finished building: default.size.stdout
+ 
+00:50:41 **** Incremental Build of configuration Debug for project 14_input_interrupt ****
+make -j16 all 
+arm-none-eabi-size   14_input_interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1300	      8	   1568	   2876	    b3c	14_input_interrupt.elf
+Finished building: default.size.stdout
+ 
+00:50:59 **** Incremental Build of configuration Debug for project 14_input_interrupt ****
+make -j16 all 
+arm-none-eabi-size   14_input_interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1300	      8	   1568	   2876	    b3c	14_input_interrupt.elf
+Finished building: default.size.stdout
+ 
+00:52:05 **** Incremental Build of configuration Debug for project 14_input_interrupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:3:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "14_input_interrupt.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/14_input_interrupt/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="14_input_interrupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 14_input_interrupt.elf
+ 
+arm-none-eabi-size   14_input_interrupt.elf 
+arm-none-eabi-objdump -h -S  14_input_interrupt.elf  > "14_input_interrupt.list"
+   text	   data	    bss	    dec	    hex	filename
+   5532	    100	   1900	   7532	   1d6c	14_input_interrupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: 14_input_interrupt.list
+ 
+00:52:07 **** Incremental Build of configuration Debug for project 14_input_interrupt ****
+make -j16 all 
+arm-none-eabi-size   14_input_interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5532	    100	   1900	   7532	   1d6c	14_input_interrupt.elf
+Finished building: default.size.stdout
+ 
+00:52:24 **** Incremental Build of configuration Debug for project 14_input_interrupt ****
+make -j16 all 
+arm-none-eabi-size   14_input_interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5532	    100	   1900	   7532	   1d6c	14_input_interrupt.elf
+Finished building: default.size.stdout
+ 

@@ -1,0 +1,2 @@
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include/core_cm0.h:623:22:__NVIC_EnableIRQ	2
+../Src/exti.c:13:6:pc13_exti_init	1
