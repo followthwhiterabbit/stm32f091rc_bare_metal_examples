@@ -1,0 +1,5 @@
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include/core_cm0.h:623:22:__NVIC_EnableIRQ	16	static
+../Src/adc.c:27:6:pa1_adc_interrupt_init	8	static
+../Src/adc.c:69:6:pa1_adc_init	8	static
+../Src/adc.c:100:6:start_conversion	8	static
+../Src/adc.c:111:10:adc_read	8	static

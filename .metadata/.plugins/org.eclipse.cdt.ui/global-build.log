@@ -1918,3 +1918,344 @@ arm-none-eabi-size   15_uart_rx_interrupt.elf
    4132	    100	   1908	   6140	   17fc	15_uart_rx_interrupt.elf
 Finished building: default.size.stdout
  
+13:40:04 **** Build of configuration Debug for project 16_adc_interrupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/adc.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/adc.d" -MT"Src/adc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/adc.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/uart.o"
+In file included from ../Src/adc.c:8:
+../Inc/adc.h:13: warning: "ADC_ISR_EOC" redefined
+   13 | #define ADC_ISR_EOC             (1U<<2)
+      | 
+In file included from /home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:153,
+                 from ../Src/adc.c:7:
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:801: note: this is the location of the previous definition
+  801 | #define ADC_ISR_EOC               ADC_ISR_EOC_Msk                              /*!< ADC group regular end of unitary conversion flag */
+      | 
+../Src/adc.c: In function 'pa1_adc_interrupt_init':
+../Src/adc.c:50:9: warning: implicit declaration of function 'NVIC_Enable'; did you mean 'NVIC_EnableIRQ'? [-Wimplicit-function-declaration]
+   50 |         NVIC_Enable(ADC1_COMP_IRQn);
+      |         ^~~~~~~~~~~
+      |         NVIC_EnableIRQ
+In file included from ../Src/main.c:6:
+../Inc/adc.h:13: warning: "ADC_ISR_EOC" redefined
+   13 | #define ADC_ISR_EOC             (1U<<2)
+      | 
+In file included from /home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:153,
+                 from ../Src/main.c:2:
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:801: note: this is the location of the previous definition
+  801 | #define ADC_ISR_EOC               ADC_ISR_EOC_Msk                              /*!< ADC group regular end of unitary conversion flag */
+      | 
+../Src/main.c: In function 'main':
+../Src/main.c:32:35: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   32 |         printf("sensor value is  %d \n\r", sensor_value);
+      |                                  ~^        ~~~~~~~~~~~~
+      |                                   |        |
+      |                                   int      uint32_t {aka long unsigned int}
+      |                                  %ld
+In file included from ../Src/main.c:3:
+../Src/main.c: At top level:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "16_adc_interrupt.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/16_adc_interrupt/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="16_adc_interrupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+/opt/st/stm32cubeide_1.13.2/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.linux64_1.1.1.202309131626/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld: ./Src/adc.o: in function `pa1_adc_interrupt_init':
+/home/kaan/cubeideworkspace/16_adc_interrupt/Debug/../Src/adc.c:50: undefined reference to `NVIC_Enable'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:63: 16_adc_interrupt.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+13:40:51 **** Incremental Build of configuration Debug for project 16_adc_interrupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/adc.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/adc.d" -MT"Src/adc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/adc.o"
+In file included from ../Src/adc.c:8:
+../Inc/adc.h:13: warning: "ADC_ISR_EOC" redefined
+   13 | #define ADC_ISR_EOC             (1U<<2)
+      | 
+In file included from /home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:153,
+                 from ../Src/adc.c:7:
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include/stm32f091xc.h:801: note: this is the location of the previous definition
+  801 | #define ADC_ISR_EOC               ADC_ISR_EOC_Msk                              /*!< ADC group regular end of unitary conversion flag */
+      | 
+arm-none-eabi-gcc -o "16_adc_interrupt.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/16_adc_interrupt/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="16_adc_interrupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 16_adc_interrupt.elf
+ 
+arm-none-eabi-size   16_adc_interrupt.elf 
+arm-none-eabi-objdump -h -S  16_adc_interrupt.elf  > "16_adc_interrupt.list"
+   text	   data	    bss	    dec	    hex	filename
+   5524	    100	   1908	   7532	   1d6c	16_adc_interrupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: 16_adc_interrupt.list
+ 
+13:44:41 **** Incremental Build of configuration Debug for project 16_adc_interrupt ****
+make -j16 all 
+arm-none-eabi-size   16_adc_interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5524	    100	   1908	   7532	   1d6c	16_adc_interrupt.elf
+Finished building: default.size.stdout
+ 
+13:45:02 **** Incremental Build of configuration Debug for project 16_adc_interrupt ****
+make -j16 all 
+arm-none-eabi-size   16_adc_interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5524	    100	   1908	   7532	   1d6c	16_adc_interrupt.elf
+Finished building: default.size.stdout
+ 
+13:45:23 **** Incremental Build of configuration Debug for project 16_adc_interrupt ****
+make -j16 all 
+arm-none-eabi-size   16_adc_interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5524	    100	   1908	   7532	   1d6c	16_adc_interrupt.elf
+Finished building: default.size.stdout
+ 
+13:45:49 **** Incremental Build of configuration Debug for project 16_adc_interrupt ****
+make -j16 all 
+arm-none-eabi-size   16_adc_interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5524	    100	   1908	   7532	   1d6c	16_adc_interrupt.elf
+Finished building: default.size.stdout
+ 
+13:45:52 **** Incremental Build of configuration Debug for project 16_adc_interrupt ****
+make -j16 all 
+arm-none-eabi-size   16_adc_interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5524	    100	   1908	   7532	   1d6c	16_adc_interrupt.elf
+Finished building: default.size.stdout
+ 
+13:47:02 **** Incremental Build of configuration Debug for project 16_adc_interrupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/adc.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/adc.d" -MT"Src/adc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/adc.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:32:35: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   32 |         printf("sensor value is  %d \n\r", sensor_value);
+      |                                  ~^        ~~~~~~~~~~~~
+      |                                   |        |
+      |                                   int      uint32_t {aka long unsigned int}
+      |                                  %ld
+In file included from ../Src/main.c:3:
+../Src/main.c: At top level:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "16_adc_interrupt.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/16_adc_interrupt/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="16_adc_interrupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 16_adc_interrupt.elf
+ 
+arm-none-eabi-size   16_adc_interrupt.elf 
+arm-none-eabi-objdump -h -S  16_adc_interrupt.elf  > "16_adc_interrupt.list"
+   text	   data	    bss	    dec	    hex	filename
+   5524	    100	   1908	   7532	   1d6c	16_adc_interrupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: 16_adc_interrupt.list
+ 
+13:47:05 **** Incremental Build of configuration Debug for project 16_adc_interrupt ****
+make -j16 all 
+arm-none-eabi-size   16_adc_interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5524	    100	   1908	   7532	   1d6c	16_adc_interrupt.elf
+Finished building: default.size.stdout
+ 
+13:47:49 **** Incremental Build of configuration Debug for project 16_adc_interrupt ****
+make -j16 all 
+arm-none-eabi-size   16_adc_interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5524	    100	   1908	   7532	   1d6c	16_adc_interrupt.elf
+Finished building: default.size.stdout
+ 
+13:47:51 **** Incremental Build of configuration Debug for project 16_adc_interrupt ****
+make -j16 all 
+arm-none-eabi-size   16_adc_interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5524	    100	   1908	   7532	   1d6c	16_adc_interrupt.elf
+Finished building: default.size.stdout
+ 
+13:48:23 **** Incremental Build of configuration Debug for project 16_adc_interrupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:32:35: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   32 |         printf("sensor value is  %d \n\r", sensor_value);
+      |                                  ~^        ~~~~~~~~~~~~
+      |                                   |        |
+      |                                   int      uint32_t {aka long unsigned int}
+      |                                  %ld
+In file included from ../Src/main.c:3:
+../Src/main.c: At top level:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "16_adc_interrupt.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/16_adc_interrupt/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="16_adc_interrupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 16_adc_interrupt.elf
+ 
+arm-none-eabi-size   16_adc_interrupt.elf 
+arm-none-eabi-objdump -h -S  16_adc_interrupt.elf  > "16_adc_interrupt.list"
+   text	   data	    bss	    dec	    hex	filename
+   5524	    100	   1908	   7532	   1d6c	16_adc_interrupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: 16_adc_interrupt.list
+ 
+13:48:36 **** Incremental Build of configuration Debug for project 16_adc_interrupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:3:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "16_adc_interrupt.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/16_adc_interrupt/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="16_adc_interrupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 16_adc_interrupt.elf
+ 
+arm-none-eabi-size   16_adc_interrupt.elf 
+arm-none-eabi-objdump -h -S  16_adc_interrupt.elf  > "16_adc_interrupt.list"
+   text	   data	    bss	    dec	    hex	filename
+   5524	    100	   1908	   7532	   1d6c	16_adc_interrupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: 16_adc_interrupt.list
+ 
+13:48:40 **** Incremental Build of configuration Debug for project 16_adc_interrupt ****
+make -j16 all 
+arm-none-eabi-size   16_adc_interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5524	    100	   1908	   7532	   1d6c	16_adc_interrupt.elf
+Finished building: default.size.stdout
+ 
+13:51:05 **** Incremental Build of configuration Debug for project 16_adc_interrupt ****
+make -j16 all 
+arm-none-eabi-size   16_adc_interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5524	    100	   1908	   7532	   1d6c	16_adc_interrupt.elf
+Finished building: default.size.stdout
+ 
+13:51:12 **** Incremental Build of configuration Debug for project 16_adc_interrupt ****
+make -j16 all 
+arm-none-eabi-size   16_adc_interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5524	    100	   1908	   7532	   1d6c	16_adc_interrupt.elf
+Finished building: default.size.stdout
+ 
+13:55:50 **** Incremental Build of configuration Debug for project 16_adc_interrupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:3:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "16_adc_interrupt.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/16_adc_interrupt/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="16_adc_interrupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 16_adc_interrupt.elf
+ 
+arm-none-eabi-size   16_adc_interrupt.elf 
+arm-none-eabi-objdump -h -S  16_adc_interrupt.elf  > "16_adc_interrupt.list"
+   text	   data	    bss	    dec	    hex	filename
+   1224	      8	   1568	   2800	    af0	16_adc_interrupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: 16_adc_interrupt.list
+ 
+13:55:53 **** Incremental Build of configuration Debug for project 16_adc_interrupt ****
+make -j16 all 
+arm-none-eabi-size   16_adc_interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1224	      8	   1568	   2800	    af0	16_adc_interrupt.elf
+Finished building: default.size.stdout
+ 
+13:57:12 **** Incremental Build of configuration Debug for project 16_adc_interrupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:3:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "16_adc_interrupt.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/16_adc_interrupt/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="16_adc_interrupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 16_adc_interrupt.elf
+ 
+arm-none-eabi-size   16_adc_interrupt.elf 
+arm-none-eabi-objdump -h -S  16_adc_interrupt.elf  > "16_adc_interrupt.list"
+   text	   data	    bss	    dec	    hex	filename
+   1224	      8	   1568	   2800	    af0	16_adc_interrupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: 16_adc_interrupt.list
+ 
+13:57:16 **** Incremental Build of configuration Debug for project 16_adc_interrupt ****
+make -j16 all 
+arm-none-eabi-size   16_adc_interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1224	      8	   1568	   2800	    af0	16_adc_interrupt.elf
+Finished building: default.size.stdout
+ 
+13:57:24 **** Incremental Build of configuration Debug for project 16_adc_interrupt ****
+make -j16 all 
+arm-none-eabi-size   16_adc_interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1224	      8	   1568	   2800	    af0	16_adc_interrupt.elf
+Finished building: default.size.stdout
+ 
+13:57:27 **** Incremental Build of configuration Debug for project 16_adc_interrupt ****
+make -j16 all 
+arm-none-eabi-size   16_adc_interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1224	      8	   1568	   2800	    af0	16_adc_interrupt.elf
+Finished building: default.size.stdout
+ 
+13:57:29 **** Incremental Build of configuration Debug for project 16_adc_interrupt ****
+make -j16 all 
+arm-none-eabi-size   16_adc_interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1224	      8	   1568	   2800	    af0	16_adc_interrupt.elf
+Finished building: default.size.stdout
+ 
+13:58:24 **** Incremental Build of configuration Debug for project 16_adc_interrupt ****
+make -j16 all 
+arm-none-eabi-size   16_adc_interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1224	      8	   1568	   2800	    af0	16_adc_interrupt.elf
+Finished building: default.size.stdout
+ 
+13:58:34 **** Incremental Build of configuration Debug for project 16_adc_interrupt ****
+make -j16 all 
+arm-none-eabi-size   16_adc_interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1224	      8	   1568	   2800	    af0	16_adc_interrupt.elf
+Finished building: default.size.stdout
+ 
+13:59:31 **** Incremental Build of configuration Debug for project 16_adc_interrupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:3:
+../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
+   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
+      |             ^~~~~~~~~~~~~~~~~
+../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
+   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
+      |                 ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "16_adc_interrupt.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/16_adc_interrupt/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="16_adc_interrupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 16_adc_interrupt.elf
+ 
+arm-none-eabi-size   16_adc_interrupt.elf 
+arm-none-eabi-objdump -h -S  16_adc_interrupt.elf  > "16_adc_interrupt.list"
+   text	   data	    bss	    dec	    hex	filename
+   1224	      8	   1568	   2800	    af0	16_adc_interrupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: 16_adc_interrupt.list
+ 
