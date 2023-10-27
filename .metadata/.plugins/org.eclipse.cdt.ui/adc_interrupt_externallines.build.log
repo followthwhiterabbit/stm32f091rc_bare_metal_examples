@@ -1,0 +1,10 @@
+14:49:02 **** Incremental Build of configuration Debug for project adc_interrupt_externallines ****
+make -j16 all 
+arm-none-eabi-size   adc_interrupt_externallines.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7256	     20	   1636	   8912	   22d0	adc_interrupt_externallines.elf
+Finished building: default.size.stdout
+ 
+
+14:49:03 Build Finished. 0 errors, 0 warnings. (took 173ms)
+

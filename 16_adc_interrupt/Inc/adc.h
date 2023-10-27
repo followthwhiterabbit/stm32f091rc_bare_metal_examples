@@ -18,6 +18,7 @@
 void pa1_adc_init(void);
 void pa1_adc_interrupt_init(void);
 void start_conversion(void);
+void external_interrupt_selection_code(void);
 uint32_t adc_read(void);
 
 

@@ -1,24 +1,10 @@
-13:59:31 **** Incremental Build of configuration Debug for project 16_adc_interrupt ****
+14:45:32 **** Incremental Build of configuration Debug for project 16_adc_interrupt ****
 make -j16 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -DSTM32F091xC -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-In file included from ../Src/main.c:3:
-../Inc/uart.h:17:13: warning: 'uart_set_baudrate' declared 'static' but never defined [-Wunused-function]
-   17 | static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
-      |             ^~~~~~~~~~~~~~~~~
-../Inc/uart.h:19:17: warning: 'compute_uart_bd' declared 'static' but never defined [-Wunused-function]
-   19 | static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
-      |                 ^~~~~~~~~~~~~~~
-arm-none-eabi-gcc -o "16_adc_interrupt.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/16_adc_interrupt/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="16_adc_interrupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 16_adc_interrupt.elf
- 
 arm-none-eabi-size   16_adc_interrupt.elf 
-arm-none-eabi-objdump -h -S  16_adc_interrupt.elf  > "16_adc_interrupt.list"
    text	   data	    bss	    dec	    hex	filename
-   1224	      8	   1568	   2800	    af0	16_adc_interrupt.elf
+   1452	      8	   1568	   3028	    bd4	16_adc_interrupt.elf
 Finished building: default.size.stdout
  
-Finished building: 16_adc_interrupt.list
- 
 
-13:59:31 Build Finished. 0 errors, 2 warnings. (took 224ms)
+14:45:32 Build Finished. 0 errors, 0 warnings. (took 120ms)
 

@@ -1,5 +1,7 @@
 /home/kaan/cubeideworkspace/chip_headers/CMSIS/Include/core_cm0.h:623:22:__NVIC_EnableIRQ	2
-../Src/adc.c:27:6:pa1_adc_interrupt_init	1
-../Src/adc.c:69:6:pa1_adc_init	1
-../Src/adc.c:100:6:start_conversion	1
-../Src/adc.c:111:10:adc_read	2
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include/core_cm0.h:730:22:__NVIC_SetPriority	2
+../Src/adc.c:28:6:external_interrupt_selection_code	1
+../Src/adc.c:58:6:pa1_adc_interrupt_init	1
+../Src/adc.c:107:6:pa1_adc_init	1
+../Src/adc.c:138:6:start_conversion	1
+../Src/adc.c:149:10:adc_read	2

@@ -9,11 +9,8 @@
 static void adc_callback(void);
 
 uint32_t sensor_value;
-
-
-
-
-
+uint16_t val;
+uint16_t adcResult = 0;
 
 int main(void)
 {
@@ -22,21 +19,22 @@ int main(void)
 	//start_conversion();
 
 	pa1_adc_interrupt_init();
+	//external_interrupt_selection_code();
+
+
 	start_conversion();
-
-
 while(1)
 {
-
-
+	//printf("adc value is %d: \r\n", (uint16_t)adcResult);
 }
 
 }
+
+
 
 static void adc_callback(void)
 {
-	sensor_value = ADC1->DR;
-	printf("the sensor value is %d \n\r", (int)sensor_value);
+	adcResult = ADC1->DR;
 }
 
 
@@ -46,15 +44,34 @@ static void adc_callback(void)
 void ADC_COM_IRQHandler(void)
 {
 	/* Check for eoc in SR */
-	if(ADC1->ISR & ADC_EOC)
-	{
-		/* Clear EOC */
-		ADC1->ISR &= ~ADC_EOC;
 
+
+ 	if(ADC1->ISR & ADC_ISR_EOC)
+	{
+//		 Clear EOC
+ 		 //adcResult = ADC1->DR;
 		// doing sth here
 		adc_callback();
 
 
 	}
-}
 
+
+		ADC1->ISR &= ~ADC_ISR_EOC;
+/*
+
+	if(EXTI->PR & (1U<<21))
+		{
+
+		adc_callback();
+
+			val = 1;
+			EXTI->PR |= (1U<<21);
+
+
+		}
+
+}
+*/
+
+}

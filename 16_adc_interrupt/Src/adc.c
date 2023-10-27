@@ -24,6 +24,37 @@
  *	 third = ch3
  *
  */
+
+void external_interrupt_selection_code()
+{
+	 	RCC->AHBENR |= RCC_AHBENR_GPIOAEN;
+
+	 	GPIOA->MODER |= (1<<2);
+	 	GPIOA->MODER |= (1<<3);
+
+
+	    // Enable the ADC1 clock
+	    RCC->APB2ENR |= RCC_APB2ENR_ADC1EN;
+
+	    // Select the ADC channel and configure the trigger for the ADC
+	    ADC1->CHSELR = ADC_CH1; // Configure ADC settings, channel, and trigger
+
+	    // Enable the ADC end of conversion interrupt
+	    ADC1->IER |= ADC_IER_EOCIE;
+
+	    // Configure NVIC for ADC1 interrupt
+	    NVIC_EnableIRQ(ADC1_IRQn); // Use the correct interrupt name for ADC1
+	    NVIC_SetPriority(ADC1_IRQn, 0);
+
+	    // Enable ADC and start conversions
+	    ADC1->CR |= ADC_CR_ADEN;
+
+}
+
+
+
+
+
 void pa1_adc_interrupt_init(void)
 {
 
@@ -46,8 +77,15 @@ void pa1_adc_interrupt_init(void)
 	/* Enable ADC end-of-conversion interrupt */
 	ADC1->IER |= CR_EOCIE;
 
+
 	/* Enable ADC interrupt in NVIC */
 	NVIC_EnableIRQ(ADC1_COMP_IRQn);
+
+
+	/* Setting Priority */
+	NVIC_SetPriority(ADC1_COMP_IRQn, 2);
+
+
 
 
 	/* Configure adc parameters */
