@@ -1,0 +1,3 @@
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include/core_cm0.h:623:22:__NVIC_EnableIRQ	2
+../Src/tim.c:22:6:tim2_1hz_init	1
+../Src/tim.c:45:6:tim2_1hz_interrupt_init	1

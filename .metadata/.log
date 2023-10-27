@@ -4115,3 +4115,18 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY net.sourceforge.vrapper.eclipse 1 0 2023-10-27 15:00:55.240
 !MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-27 16:27:41.265
+!MESSAGE Indexed '19_timer_interrupt' (14 sources, 70 headers) in 0.833 sec: 2,747 declarations; 4,396 references; 4 unresolved inclusions; 17 syntax errors; 404 unresolved names (5.4%)
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2023-10-27 16:27:49.282
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2023-10-27 16:27:54.263
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2023-10-27 16:32:17.771
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2023-10-27 16:38:23.556
+!MESSAGE Won't launch debug session since we failed to locate the binary.

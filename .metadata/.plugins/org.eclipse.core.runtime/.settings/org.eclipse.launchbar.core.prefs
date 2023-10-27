@@ -1,7 +1,7 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:10_adc_continuous_conversion Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:11_systick_delay Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:2_gpio_output Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:3_gpio_bsrr Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:4_gpio_input,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:5_uart_tx Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:6_uart_printf Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:7_uart_modular Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:8_uart_rx Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:9_adc Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:17_systick_interrupt Debug
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:19_timer_interrupt Debug
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:10_adc_continuous_conversion\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:10_adc_continuous_conversion\ Debug/activeLaunchTarget=null\:---
@@ -13,6 +13,7 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:14_input_interrupt\ Debug/activ
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:15_uart_rx_interrupt\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:16_adc_interrupt\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:17_systick_interrupt\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:19_timer_interrupt\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1_led_toggle_addr_struct\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1_led_toggle_addr_struct\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:2_gpio_output\ Debug/activeLaunchMode=run

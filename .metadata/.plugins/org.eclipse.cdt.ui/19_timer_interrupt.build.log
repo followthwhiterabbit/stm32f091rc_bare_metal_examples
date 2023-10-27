@@ -1,0 +1,10 @@
+16:39:15 **** Incremental Build of configuration Debug for project 19_timer_interrupt ****
+make -j16 all 
+arm-none-eabi-size   19_timer_interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5484	    100	   1900	   7484	   1d3c	19_timer_interrupt.elf
+Finished building: default.size.stdout
+ 
+
+16:39:15 Build Finished. 0 errors, 0 warnings. (took 129ms)
+
