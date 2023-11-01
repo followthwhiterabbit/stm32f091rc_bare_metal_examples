@@ -1,0 +1,106 @@
+
+// PC0 - PC7 = D0 - D7
+// PB5 = R/S line
+// PB6 = R/W
+// PB7 = EN
+
+#include "stm32f0xx.h"
+
+#define RS 	 0x20     // 0010 0000 pb6
+#define RW   0x40     // 0100 0000
+#define EN	 0x80       // 1000 0000
+
+void delayMs(int delay);
+void LCD_Init(void);
+void Gpio_Init(void);
+void LCD_command(unsigned char command);
+void LCD_data(char data);
+
+int main(void)
+{
+	LCD_Init();
+
+}
+
+
+
+void LCD_Init(void)
+{
+	Gpio_Init();
+	// Init sequence
+
+	delayMs(30);
+	LCD_command(0x30);
+	delayMs(10);
+	LCD_command(0x30);
+	delayMs(1);
+	LCD_command(0x30);
+
+
+	LCD_command(0x38); // set 8 bit data mode, 2-line, 5x7 font
+	LCD_command(0x06); // move cursor right
+
+	LCD_command(0x01); // clear screen, move curser home
+	LCD_command(0x0F); // turn display, blink cursor
+
+}
+
+
+
+
+void Gpio_Init(void)
+{
+
+	RCC->AHBENR |= 0xC0000;
+	GPIOB->MODER |= 0x5400;
+
+	GPIOB->BSRR = 0xC0; // Set EN and RW low
+
+	// Set PC0 - PC7 as output;
+	GPIOC->MODER |= 0x5555;
+
+}
+
+// sending commands to the lcd
+void LCD_command(unsigned char command)
+{
+	// resettting the RS and r/w pins
+	GPIOB->BSRR = (RS | RW) << 16; // RS=0, r/w = 0
+	GPIOC->ODR = command;
+	GPIOB->BSRR = EN;
+	delayMs(0);
+	GPIOB->BSRR = EN << 16; // clear EN pin
+
+}
+
+
+// sending data to the lcd
+void LCD_data(char data)
+{
+GPIOB->BSRR = RS; // RS=1 to send the data
+GPIOB->BSRR = RW << 16; // R/W = 0
+GPIOC->ODR  = data; // sending data to the lcd
+GPIOB->BSRR = EN; // seths GPIOB->ODR 1, enables the data sending
+delayMs(0);
+GPIOB-BSRR =  EN << 16; // clear EN
+
+
+}
+
+void delayMs(int delay)
+{
+	int i;
+	for(; delay>0; delay--)
+	{
+		for(i = 0; i < 3195; i++)
+		{
+
+		}
+	}
+}
+
+
+
+
+
+

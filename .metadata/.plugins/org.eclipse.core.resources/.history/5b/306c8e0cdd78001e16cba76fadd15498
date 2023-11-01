@@ -1,0 +1,18 @@
+
+// PC0 - PC7 = D0 - D7
+// PB5 = R/S line
+// PB6 = R/W
+// PB7 = EN
+
+#include "stm32f0xx.h"
+
+
+
+
+int main(void)
+{
+
+
+
+
+}

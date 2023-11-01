@@ -1,0 +1,42 @@
+
+// PC0 - PC7 = D0 - D7
+// PB5 = R/S line
+// PB6 = R/W
+// PB7 = EN
+
+#include "stm32f0xx.h"
+
+#define RS 	 0x20     // 0010 0000 pb6
+#define RW   0x40     // 0100 0000
+#define EN	 0x80       // 1000 0000
+
+
+
+
+int main(void)
+{
+
+
+
+
+}
+
+
+
+void Gpio_Init(void)
+{
+
+	RCC->AHBENR |= 0xC0000;
+	GPIOB->MODER |= 0x5400;
+
+	GPIOB->BSRR = 0xC0; // Set EN and RW low
+
+	// Set PC0 - PC7 as output;
+
+
+
+
+
+
+
+}
