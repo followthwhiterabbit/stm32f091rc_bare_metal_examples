@@ -114,3 +114,52 @@ arm-none-eabi-size   lcd_8bit.elf
     832	      8	   1568	   2408	    968	lcd_8bit.elf
 Finished building: default.size.stdout
  
+20:02:34 **** Incremental Build of configuration Debug for project lcd_8bit ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F091xC -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "lcd_8bit.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/lcd_8bit/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lcd_8bit.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lcd_8bit.elf
+ 
+arm-none-eabi-size   lcd_8bit.elf 
+arm-none-eabi-objdump -h -S  lcd_8bit.elf  > "lcd_8bit.list"
+   text	   data	    bss	    dec	    hex	filename
+    804	      8	   1568	   2380	    94c	lcd_8bit.elf
+Finished building: default.size.stdout
+ 
+Finished building: lcd_8bit.list
+ 
+20:02:37 **** Incremental Build of configuration Debug for project lcd_8bit ****
+make -j16 all 
+arm-none-eabi-size   lcd_8bit.elf 
+   text	   data	    bss	    dec	    hex	filename
+    804	      8	   1568	   2380	    94c	lcd_8bit.elf
+Finished building: default.size.stdout
+ 
+20:09:55 **** Incremental Build of configuration Debug for project lcd_8bit ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DSTM32F091xC -DSTM32 -DSTM32F0 -DNUCLEO_F091RC -DSTM32F091RCTx -c -I../Inc -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Device/ST/STM32F0xx/Include -I/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "lcd_8bit.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/kaan/cubeideworkspace/lcd_8bit/STM32F091RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lcd_8bit.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lcd_8bit.elf
+ 
+arm-none-eabi-size   lcd_8bit.elf 
+arm-none-eabi-objdump -h -S  lcd_8bit.elf  > "lcd_8bit.list"
+   text	   data	    bss	    dec	    hex	filename
+    824	      8	   1568	   2400	    960	lcd_8bit.elf
+Finished building: default.size.stdout
+ 
+Finished building: lcd_8bit.list
+ 
+20:09:57 **** Incremental Build of configuration Debug for project lcd_8bit ****
+make -j16 all 
+arm-none-eabi-size   lcd_8bit.elf 
+   text	   data	    bss	    dec	    hex	filename
+    824	      8	   1568	   2400	    960	lcd_8bit.elf
+Finished building: default.size.stdout
+ 
+20:10:13 **** Incremental Build of configuration Debug for project lcd_8bit ****
+make -j16 all 
+arm-none-eabi-size   lcd_8bit.elf 
+   text	   data	    bss	    dec	    hex	filename
+    824	      8	   1568	   2400	    960	lcd_8bit.elf
+Finished building: default.size.stdout
+ 

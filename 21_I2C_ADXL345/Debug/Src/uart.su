@@ -1,0 +1,9 @@
+/home/kaan/cubeideworkspace/chip_headers/CMSIS/Include/core_cm0.h:623:22:__NVIC_EnableIRQ	16	static
+../Src/uart.c:24:5:__io_putchar	16	static
+../Src/uart.c:29:6:uart2_rxtx_init	8	static
+../Src/uart.c:79:6:uart2_rx_interrupt_init	8	static
+../Src/uart.c:127:6:uart2_tx_init	8	static
+../Src/uart.c:163:6:uart_read	8	static
+../Src/uart.c:185:6:uart_write	16	static
+../Src/uart.c:206:13:uart_set_baudrate	24	static
+../Src/uart.c:216:17:compute_uart_bd	16	static

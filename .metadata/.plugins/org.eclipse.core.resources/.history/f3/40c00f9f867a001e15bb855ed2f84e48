@@ -1,0 +1,38 @@
+/*
+ * i2c.c
+ *
+ *  Created on: Nov 3, 2023
+ *      Author: kaan
+ */
+#include "stm32f0xx.h"
+
+
+/* Pinout
+ *  PB8 ---- SCL
+ *  PB9 ---- SDA
+ *
+ *
+ */
+
+
+
+void I2C1_init(void)
+{
+	/* Enable clock access to GPIOB */
+
+
+
+
+	/* Set PB8 and PB9 mode to alternate function */
+
+	/* Set PB8 and PB9 output type to open drain */
+	/* Enable Pullup for PB8 and PB9 */
+
+
+	/* Enable clock access to I2C1 */
+
+
+
+}
+
+

@@ -1,10 +1,10 @@
-19:58:51 **** Incremental Build of configuration Debug for project lcd_8bit ****
+20:10:13 **** Incremental Build of configuration Debug for project lcd_8bit ****
 make -j16 all 
 arm-none-eabi-size   lcd_8bit.elf 
    text	   data	    bss	    dec	    hex	filename
-    832	      8	   1568	   2408	    968	lcd_8bit.elf
+    824	      8	   1568	   2400	    960	lcd_8bit.elf
 Finished building: default.size.stdout
  
 
-19:58:51 Build Finished. 0 errors, 0 warnings. (took 171ms)
+20:10:13 Build Finished. 0 errors, 0 warnings. (took 309ms)
 
