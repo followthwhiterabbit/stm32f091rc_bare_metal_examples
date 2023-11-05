@@ -52,26 +52,10 @@ void I2C1_init(void)
 	 *  Write PE = 1;
 	 */
 
-	while((I2C1->CR1) & (1U << 0)) // while is not set to 0, set it to zero, if it's zero, cause APB clock delay
+	while((I2C1->CR1) & (1U << 0))
 	{
 		I2C1->CR1 &= ~(1U << 0);
 	}
-
-
-	// here we can set the TIMINGR register value for F0 series microcontroller
-	/*
-	 *	I2C Speed Mode = Standard
-	 *	I2C Speed frequency = 100Khz
-	 *	Rise Time(ns) = 100
-	 *	Fall Time(ns) = 40
-	 *	Analog Filter = Enabled
-	 *
-	 */
-
-
-	I2C1->TIMINGR = (uint32_t)0x00301D2B;
-
-
 
 /*
  * Additionally, in master mode, the SCL clock high and low levels must be configured by
@@ -80,8 +64,20 @@ void I2C1_init(void)
  *
  */
 
+
 	// coming out of the reset mode
-	I2C1->CR1 |= 1U < 0; // we come out of the reset mode
+	I2C1->CR1 |= 1U < 0;
+
+
+
+
+
+
+
+
+
+
+
 
 
 

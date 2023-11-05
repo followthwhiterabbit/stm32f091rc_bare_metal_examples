@@ -59,16 +59,6 @@ void I2C1_init(void)
 
 
 	// here we can set the TIMINGR register value for F0 series microcontroller
-	/*
-	 *	I2C Speed Mode = Standard
-	 *	I2C Speed frequency = 100Khz
-	 *	Rise Time(ns) = 100
-	 *	Fall Time(ns) = 40
-	 *	Analog Filter = Enabled
-	 *
-	 */
-
-
 	I2C1->TIMINGR = (uint32_t)0x00301D2B;
 
 
@@ -81,7 +71,18 @@ void I2C1_init(void)
  */
 
 	// coming out of the reset mode
-	I2C1->CR1 |= 1U < 0; // we come out of the reset mode
+	I2C1->CR1 |= 1U < 0;
+
+
+
+
+
+
+
+
+
+
+
 
 
 

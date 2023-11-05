@@ -81,7 +81,18 @@ void I2C1_init(void)
  */
 
 	// coming out of the reset mode
-	I2C1->CR1 |= 1U < 0; // we come out of the reset mode
+	I2C1->CR1 |= 1U < 0;
+
+
+
+
+
+
+
+
+
+
+
 
 
 
