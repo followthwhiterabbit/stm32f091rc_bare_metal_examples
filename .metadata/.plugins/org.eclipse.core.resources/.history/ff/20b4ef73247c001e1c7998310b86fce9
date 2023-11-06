@@ -7,16 +7,11 @@
 #include "stm32f0xx.h"
 
 
-#define GPIOB_EN		(1U<<18)
-#define I2C1_EN			(1U<<21)
-#define I2C1_CR2_START 	(1U<<13)
-#define I2C1_ISR_ADDR   (1U<<3)
-#define I2C1_ISR_TXE	(1U<<0)
+#define GPIOB_EN	(1U<<18)
+#define I2C1_EN		(1U<<21)
 
 
-
-#define SR2_BUSY 	(1U<<15)
-
+#define SR2_BUSY 	(1U << 15)
 
 
 /* Pinout
@@ -103,72 +98,11 @@ void I2C1_byteRead(char saddr, char maddr, char* data)
 
 	}
 
-	/* Generate Start */
-	I2C1->CR2 |= I2C1_CR2_START;
 
-	// wait until start flag is set
-
-
-
-	//  Transmit slave address + write
-	I2C1->TXDR |= saddr << 1;
-
-	// wait until addr flag is set
-	while(!(I2C1->ISR & (I2C1_ISR_ADDR)))
-	{
-
-	}
-
-
-	// to clear the ADDR FLAG, We need to set PE = 0
-
-	I2C1->CR1 &= ~(1U << 0);
-
-	while((I2C1->CR1) & (1U << 0)) // while is not set to 0, set it to zero, if it's zero, cause APB clock delay
-		{
-			I2C1->CR1 &= ~(1U << 0);
-		}
-
-	I2C1->CR1 |= 1U < 0; // we come out of the reset mode
-
-
-	// We need to send the memory address
-	I2C1->TXDR = maddr;
-
-	while(!(I2C1->ISR & I2C1_ISR_TXE)){}
-
-
-	/* Generate Start */
-	I2C1->CR2 |= I2C1_CR2_START;
-
-	/* Transmit slave address + Read */
-
-	I2C1->TXDR = saddr << 1 | 1;
-
-	// wait until addr flag is set
-	while(!(I2C1->ISR & (I2C1_ISR_ADDR)))
-	{
-
-	}
-
-	// clear addr flag
-    // disable acknowledge
-
-	// generate stop after data received
-	I2C1->CR2 |= (1U<<14); // stop generation after current byte transfer
-
-	// wait until rxne flag is set
-	while(!(I2C1->ISR & (1U<<2))){}
-
-	/* read data from dr */
-	*data++ = I2C1->RXDR;
 
 }
 
-void I2C1_burstRead(char saddr, char maddr, int n, char* data)
-{
 
-}
 
 
 

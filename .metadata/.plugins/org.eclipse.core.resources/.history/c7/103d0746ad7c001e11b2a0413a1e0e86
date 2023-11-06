@@ -150,9 +150,10 @@ void I2C1_byteRead(char saddr, char maddr, char* data)
 	{
 
 	}
-
 	// clear addr flag
-    // disable acknowledge
+
+
+	// disable acknowledge
 
 	// generate stop after data received
 	I2C1->CR2 |= (1U<<14); // stop generation after current byte transfer
@@ -165,10 +166,7 @@ void I2C1_byteRead(char saddr, char maddr, char* data)
 
 }
 
-void I2C1_burstRead(char saddr, char maddr, int n, char* data)
-{
 
-}
 
 
 

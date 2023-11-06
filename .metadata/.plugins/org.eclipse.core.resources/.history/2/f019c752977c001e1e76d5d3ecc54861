@@ -106,9 +106,6 @@ void I2C1_byteRead(char saddr, char maddr, char* data)
 	/* Generate Start */
 	I2C1->CR2 |= I2C1_CR2_START;
 
-	// wait until start flag is set
-
-
 
 	//  Transmit slave address + write
 	I2C1->TXDR |= saddr << 1;
@@ -151,24 +148,16 @@ void I2C1_byteRead(char saddr, char maddr, char* data)
 
 	}
 
-	// clear addr flag
-    // disable acknowledge
 
-	// generate stop after data received
-	I2C1->CR2 |= (1U<<14); // stop generation after current byte transfer
 
-	// wait until rxne flag is set
-	while(!(I2C1->ISR & (1U<<2))){}
 
-	/* read data from dr */
-	*data++ = I2C1->RXDR;
+
+
+
 
 }
 
-void I2C1_burstRead(char saddr, char maddr, int n, char* data)
-{
 
-}
 
 
 
